@@ -1,0 +1,33 @@
+#### 
+
+[Project](../../../../../index.md) > [TIMMBI\\BI](../../../../index.md) > [User databases](../../../index.md) > [Utilities](../../index.md) > [Security](../index.md) > [Schemas](Schemas.md) > simreg
+
+# ![Schemas](../../../../../Images/Schema32.png) simreg
+
+---
+
+## <a name="#properties"></a>Properties
+
+| Property | Value |
+|---|---|
+| Owner | [dbo](../Users/dbo.md) |
+
+
+---
+
+## <a name="#usedby"></a>Used By
+
+* [[simreg].[fnc_IsAddressValid]](../../Programmability/Functions/Scalar-valued_Functions/fnc_IsAddressValid.md)
+* [[simreg].[fnc_IsCorporate]](../../Programmability/Functions/Scalar-valued_Functions/fnc_IsCorporate.md)
+* [[simreg].[fnc_IsDataValidForRegistration]](../../Programmability/Functions/Scalar-valued_Functions/fnc_IsDataValidForRegistration.md)
+* [[simreg].[fnc_IsNameValid]](../../Programmability/Functions/Scalar-valued_Functions/fnc_IsNameValid.md)
+
+
+---
+
+###### Author:  MIS
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Sunday, July 4, 2021 9:38:37 PM
+

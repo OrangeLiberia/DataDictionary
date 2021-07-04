@@ -1,0 +1,26 @@
+#### 
+
+[Project](../../../../../index.md) > [TIMMBI\\BI](../../../../index.md) > [User databases](../../../index.md) > [BI](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > crm.spc_GetSubscribersMonthlyStats
+
+# ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [crm].[spc_GetSubscribersMonthlyStats]
+
+---
+
+## <a name="#parameters"></a>Parameters
+
+| Name | Data Type | Max Length (Bytes) |
+|---|---|---|
+| @DayToProcess | date | 3 |
+| @UpdateTF | bit | 1 |
+| @TimeFrame | int | 4 |
+| @TrickRS | bit | 1 |
+
+
+---
+
+###### Author:  MIS
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Sunday, July 4, 2021 9:38:37 PM
+

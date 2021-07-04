@@ -1,0 +1,28 @@
+#### 
+
+[Project](../../../../../index.md) > [TIMMBI\\BI](../../../../index.md) > [User databases](../../../index.md) > [BI](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > fwk.spt_SendSubscriptionReport
+
+# ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [fwk].[spt_SendSubscriptionReport]
+
+---
+
+## <a name="#parameters"></a>Parameters
+
+| Name | Data Type | Max Length (Bytes) |
+|---|---|---|
+| @IDReport | int | 4 |
+| @ReportName | varchar(200) | 200 |
+| @SubscriptionID | varchar(100) | 100 |
+| @SettingsMatch | varchar(100) | 100 |
+| @Debug | bit | 1 |
+| @WithDebug | bit | 1 |
+
+
+---
+
+###### Author:  MIS
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Sunday, July 4, 2021 9:38:37 PM
+

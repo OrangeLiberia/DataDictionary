@@ -1,0 +1,44 @@
+#### 
+
+[Project](../../../../../../index.md) > [TIMMBI\\BI](../../../../../index.md) > [User databases](../../../../index.md) > [BI](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > fwk.fnt_StringCountOccurencies
+
+# ![Scalar-valued Functions](../../../../../../Images/Function_Scalar32.png) [fwk].[fnt_StringCountOccurencies]
+
+---
+
+## <a name="#parameters"></a>Parameters
+
+| Name | Data Type | Max Length (Bytes) |
+|---|---|---|
+| @Field | varchar(max) | max |
+| @OccurStr | varchar(max) | max |
+| @StartPos | int | 4 |
+
+
+---
+
+## <a name="#permissions"></a>Permissions
+
+| Type | Action | Owning Principal |
+|---|---|---|
+| Grant | EXECUTE | Reader |
+| Grant | EXECUTE | olib_bu_sales |
+| Grant | EXECUTE | olib_bu_finance |
+| Grant | EXECUTE | olib_bu_mis_add |
+| Grant | EXECUTE | olib_bu_orangemoney |
+| Grant | EXECUTE | olib_bu_marketing |
+| Grant | VIEW DEFINITION | olib_bu_sales |
+| Grant | VIEW DEFINITION | olib_bu_finance |
+| Grant | VIEW DEFINITION | olib_bu_mis_add |
+| Grant | VIEW DEFINITION | olib_bu_orangemoney |
+| Grant | VIEW DEFINITION | olib_bu_marketing |
+
+
+---
+
+###### Author:  MIS
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Sunday, July 4, 2021 9:38:37 PM
+

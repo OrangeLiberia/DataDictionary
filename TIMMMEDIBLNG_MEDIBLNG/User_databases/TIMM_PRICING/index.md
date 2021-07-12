@@ -1,0 +1,48 @@
+#### 
+
+[Project](../../../index.md) > [192.168.19.11\\MEDIBLNG](../../index.md) > [User databases](../index.md) > TIMM_PRICING
+
+# ![Database](../../../Images/ntDatabase.png) TIMM_PRICING Database
+
+---
+
+## <a name="#description"></a>MS_Description
+
+Selected set of objects replicated (in sync) from TIMMCRMPROV::TIMM_Pricing database
+
+## <a name="#objecttypes"></a>Object Types
+
+* ![Tables](../../../Images/Table.png) [Tables](Tables/Tables.md)
+
+
+---
+
+## <a name="#dbproperties"></a>Database Properties
+
+| Property | Value |
+|---|---|
+| SQL Server Version | SQL Server 2016 |
+| Compatibility Level | SQL Server 2016 |
+
+
+---
+
+## <a name="#dboptions"></a>Database Options
+
+| Property | Value |
+|---|---|
+| Compatibility Level | 130 |
+| Database collation | Latin1_General_CI_AS |
+| ANSI padding enabled | NO |
+| Numeric roundabort enabled | NO |
+| Default language | English |
+
+
+---
+
+###### Author:  MIS Team
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Monday, July 12, 2021 6:27:35 PM
+

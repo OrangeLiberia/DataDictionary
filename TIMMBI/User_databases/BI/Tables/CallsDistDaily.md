@@ -17,32 +17,32 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|---|
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  |
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  |
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  |
-| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |
-|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) |
-|  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) |
-|  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RealDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RealDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | BillDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | BillDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RateBillDur | float |  | 8 | NOT NULL | ((0)) |
-|  | RateRealDur | float |  | 8 | NOT NULL | ((0)) |
-|  | DurSec0Cost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecBill0Cost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecBillCost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecCost | bigint | YES | 8 | NOT NULL |  |
-|  | NCalls0Cost | bigint | YES | 8 | NULL allowed |  |
-|  | NCallsCost | bigint | YES | 8 | NOT NULL |  |
-|  | RateBill | float | YES | 8 | NOT NULL |  |
-|  | RateDur | float | YES | 8 | NOT NULL |  |
+| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  | |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  | |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  | |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  | |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  | |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  | |
+|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | RealDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | RealDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | BillDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | BillDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | |
+|  | RateBillDur | float |  | 8 | NOT NULL | ((0)) | |
+|  | RateRealDur | float |  | 8 | NOT NULL | ((0)) | |
+|  | DurSec0Cost | bigint | YES | 8 | NOT NULL |  | |
+|  | DurSecBill0Cost | bigint | YES | 8 | NOT NULL |  | |
+|  | DurSecBillCost | bigint | YES | 8 | NOT NULL |  | |
+|  | DurSecCost | bigint | YES | 8 | NOT NULL |  | |
+|  | NCalls0Cost | bigint | YES | 8 | NULL allowed |  | |
+|  | NCallsCost | bigint | YES | 8 | NOT NULL |  | |
+|  | RateBill | float | YES | 8 | NOT NULL |  | |
+|  | RateDur | float | YES | 8 | NOT NULL |  | Rate Duration |
 
 
 ---

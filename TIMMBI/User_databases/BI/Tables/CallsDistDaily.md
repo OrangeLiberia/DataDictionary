@@ -19,12 +19,12 @@
 
 | Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default |
 |---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  |
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CallsDistDaily: IDDimDate\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  |
+| [![ PK_CallsDistDaily ](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |
 |  | NSubs | bigint |  | 8 | NOT NULL | ((0)) |
 |  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) |
 |  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |

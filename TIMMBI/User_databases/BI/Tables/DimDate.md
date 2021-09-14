@@ -17,28 +17,28 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default |
-|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_DimDateID: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | 1 - 1 |  |
-|  | Dt | smalldatetime | 4 | NOT NULL |  |  |
-|  | DtDMY | varchar(10) | 10 | NOT NULL |  |  |
-|  | DtMDY | varchar(10) | 10 | NOT NULL |  |  |
-|  | DtYMD | varchar(10) | 10 | NOT NULL |  |  |
-|  | DtYM | varchar(7) | 7 | NOT NULL |  |  |
-|  | IDPeriodYMD | int | 4 | NOT NULL |  |  |
-|  | IDPeriodYM | int | 4 | NOT NULL |  |  |
-|  | IDPeriodY | smallint | 2 | NOT NULL |  |  |
-|  | IDWeek | tinyint | 1 | NOT NULL |  |  |
-|  | IDMonth | tinyint | 1 | NOT NULL |  |  |
-|  | IDDayOfWeek | tinyint | 1 | NOT NULL |  |  |
-|  | IDDayOfMonth | tinyint | 1 | NOT NULL |  |  |
-|  | IDDayOfYear | smallint | 2 | NOT NULL |  |  |
-|  | DescDayOfWeek | varchar(20) | 20 | NOT NULL |  |  |
-|  | DescMonth | varchar(20) | 20 | NOT NULL |  |  |
-|  | IDBimonthly | tinyint | 1 | NOT NULL |  |  |
-|  | IDTrimester | tinyint | 1 | NOT NULL |  |  |
-|  | IDSemester | tinyint | 1 | NOT NULL |  |  |
-|  | LastDayOfMonth | bit | 1 | NOT NULL |  | ((0)) |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![ PK_DimDateID: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL | 1 - 1 |  | Identity of the Date Dimension |
+|  | Dt | smalldatetime | 4 | NOT NULL |  |  | Date of reference |
+|  | DtDMY | varchar(10) | 10 | NOT NULL |  |  | Date of reference in the format Day-Month-Year |
+|  | DtMDY | varchar(10) | 10 | NOT NULL |  |  | Date of reference in the format Month-Day--Year |
+|  | DtYMD | varchar(10) | 10 | NOT NULL |  |  | Date of reference in the format Year-Month-Day |
+|  | DtYM | varchar(7) | 7 | NOT NULL |  |  | Date of reference in the format Year-Month |
+|  | IDPeriodYMD | int | 4 | NOT NULL |  |  | Integer number in the following formula Year*10000 + Month*100 + Day |
+|  | IDPeriodYM | int | 4 | NOT NULL |  |  | Integer number in the following formula Year*100 + Month |
+|  | IDPeriodY | smallint | 2 | NOT NULL |  |  | Integer number in the following formula Year|
+|  | IDWeek | tinyint | 1 | NOT NULL |  |  | Integer number for week number (1 to 54 )|
+|  | IDMonth | tinyint | 1 | NOT NULL |  |  | Integer number for month (1 to 12 )|
+|  | IDDayOfWeek | tinyint | 1 | NOT NULL |  |  | Integer number for the month (1 Sunday to 7 Saturday )|
+|  | IDDayOfMonth | tinyint | 1 | NOT NULL |  |  | Integer number for the day of the month |
+|  | IDDayOfYear | smallint | 2 | NOT NULL |  |  | Integer number for the day within a year (1 to 365/366) |
+|  | DescDayOfWeek | varchar(20) | 20 | NOT NULL |  |  | Name of the day of the week |
+|  | DescMonth | varchar(20) | 20 | NOT NULL |  |  | Name of the month |
+|  | IDBimonthly | tinyint | 1 | NOT NULL |  |  |  Integer representing the bi-mester of the Year | 
+|  | IDTrimester | tinyint | 1 | NOT NULL |  |  | Integer representing the trimester of the Year  |
+|  | IDSemester | tinyint | 1 | NOT NULL |  |  | Integer representing the semester of the Year |
+|  | LastDayOfMonth | bit | 1 | NOT NULL |  | ((0)) | Indicates if it's the last day of the month |
 
 
 ---

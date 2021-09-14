@@ -14,16 +14,16 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_TransactionsDaily: IDDimDate\TransactionKey\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_TransactionsDaily: IDDimDate\TransactionKey\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | TransactionKey | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_TransactionsDaily: IDDimDate\TransactionKey\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_TransactionsDaily: IDDimDate\TransactionKey\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint | 1 | NOT NULL |
-|  | QuantityP | int | 4 | NOT NULL |
-|  | ChargeableAmountP | float | 8 | NOT NULL |
-|  | QuantityN | int | 4 | NOT NULL |
-|  | ChargeableAmountN | float | 8 | NOT NULL |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![ PK_TransactionsDaily ](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | Date Dimension ( see [fwk.DimDate](DimDate.md) ) |
+| [![ PK_TransactionsDaily ](../../../../Images/pkcluster.png)](#indexes) | TransactionKey | int | 4 | NOT NULL | Transaction identification ( see [in.TransactionKeys](TransactionKeys.md) ) |
+| [![ PK_TransactionsDaily ](../../../../Images/pkcluster.png)](#indexes) | WalletID | int | 4 | NOT NULL | Wallet identification  ( see [in.WalletTypes](WalletTypes.md) ) |
+| [![ PK_TransactionsDaily ](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint | 1 | NOT NULL |
+|  | QuantityP | int | 4 | NOT NULL | Number of Positive (money added) Transactions |
+|  | ChargeableAmountP | float | 8 | NOT NULL | Amount Positive (money added) Transactions |
+|  | QuantityN | int | 4 | NOT NULL | Number of Negative (money deducted) Transactions |
+|  | ChargeableAmountN | float | 8 | NOT NULL | Amount Negative (money deducted) Transactions |
 
 
 ---

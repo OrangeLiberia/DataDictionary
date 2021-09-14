@@ -30,7 +30,7 @@
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |  |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  | _Wallet ID References to ( see [fwk.DimDate](DimDate.md) ) _ |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |  |
-|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) | Number of subs | 
+|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) |  | Number of subs1
 |  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) |  |
 |  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |  |
 |  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |  |

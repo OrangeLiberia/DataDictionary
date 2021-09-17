@@ -24,13 +24,13 @@
 | Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default | Description |
 |---|---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  |  |
-| [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |  |
+| [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimHour | tinyint |  | 1 | NOT NULL |  |  |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  |  |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |  |
-| [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  | _Wallet ID References to ( see [fwk.DimDate](DimDate.md) ) _ |
+| [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  | _Wallet ID (see [in.WalletTypes](WalletTypes.md))_ |
 | [![Cluster Primary Key PK_CallsDistHourly: IDDimDate\IDDimHour\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |  |
-|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) |  | Number of subs1
+|  | NSubs | bigint |  | 8 | NOT NULL | ((0)) |  |
 |  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) |  |
 |  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |  |
 |  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |  |
@@ -182,7 +182,9 @@ GRANT SELECT ON  [in].[CallsDistHourly] TO [TIMM\\BU-Sales]
 GO
 GRANT VIEW DEFINITION ON  [in].[CallsDistHourly] TO [TIMM\\BU-Sales]
 GO
-EXEC sp_addextendedproperty N'MS_Description', 'Wallet ID References to ( see [fwk.DimDate](DimDate.md) ) ', 'SCHEMA', N'in', 'TABLE', N'CallsDistHourly', 'COLUMN', N'WalletID'
+EXEC sp_addextendedproperty N'MS_Description', 'Date ID (see [fwk.DimDate](DimDate.md))', 'SCHEMA', N'in', 'TABLE', N'CallsDistHourly', 'COLUMN', N'IDDimDate'
+GO
+EXEC sp_addextendedproperty N'MS_Description', 'Wallet ID (see [in.WalletTypes](WalletTypes.md))', 'SCHEMA', N'in', 'TABLE', N'CallsDistHourly', 'COLUMN', N'WalletID'
 GO
 
 ```
@@ -211,5 +213,5 @@ GO
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Tuesday, September 14, 2021 4:34:40 PM
+###### Created: Tuesday, September 14, 2021 7:17:35 PM
 

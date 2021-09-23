@@ -27,7 +27,7 @@ SIM Registration Information
 | [![Indexes IX_SIMREG_QUEUE, IX_SIMRegistrations_MSISDN, IX_SIMRegistrations_TIMM](../../../../Images/Index.png)](#indexes)(3) | MSISDN | varchar(20) | 20 | NOT NULL |  | _Subscriber MSISDN_ |
 | [![Indexes IX_GRAFANA](../../../../Images/Index.png)](#indexes) | APP | varchar(10) | 10 | NOT NULL |  | _App Identification (MIG - Migration, SIMREG - Simregistration App, TIMM-CC - CRM)_ |
 | [![Indexes IX_SIMREG_QUEUE,IX_RegistrationStats](../../../../Images/Index.png)](#indexes)(2) | ExecState | smallint | 2 | NOT NULL |  | _Registration execution state_ |
-| [![Indexes IX_GRAFANA,IX_SIMREG_QUEUE,IX_RegistrationStats](../../../../Images/Index.png)](#indexes)(3) | ReturnID | smallint | 2 | NULL allowed |  | _Registration returned value_ |
+| [![Indexes IX_GRAFANA,IX_SIMREG_QUEUE,IX_RegistrationStats](../../../../Images/Index.png)](#indexes)(3) | ReturnID | smallint | 2 | NULL allowed |  | _Registration returned value ( positive values represent successful registration, negative values represent failed registration)_ |
 |  | SubsID | numeric(18,0) | 9 | NULL allowed |  | _CRM ServiceID_ |
 | [![Indexes IX_SIMRegistrations_TIMM](../../../../Images/Index.png)](#indexes) | TIMMAccaoID | numeric(18,0) | 9 | NULL allowed |  | _CRM Action id_ |
 | [![Indexes IX_SIMRegistrations_TIMM](../../../../Images/Index.png)](#indexes) | TIMMTipoAccao | varchar(50) | 50 | NULL allowed |  | _CRM Action type_ |

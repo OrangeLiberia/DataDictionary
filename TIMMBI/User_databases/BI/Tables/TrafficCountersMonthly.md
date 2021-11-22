@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > orange.TrafficCountersMonthly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > orange.TrafficCountersMonthly
 
 # ![Tables](../../../../Images/Table32.png) [orange].[TrafficCountersMonthly]
 
@@ -17,15 +17,15 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_TrafficCountersMonthly: IDDimDate\Service](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-|  | Month | date | 3 | NOT NULL |
-| [![Cluster Primary Key PK_TrafficCountersMonthly: IDDimDate\Service](../../../../Images/pkcluster.png)](#indexes) | Service | varchar(20) | 20 | NOT NULL |
-|  | NSubs | int | 4 | NOT NULL |
-|  | Amount | decimal(10,1) | 9 | NOT NULL |
-|  | NCalls | bigint | 8 | NOT NULL |
-|  | Units | decimal(10,1) | 9 | NOT NULL |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_TrafficCountersMonthly: IDDimDate\Service](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+|  | Month | date | 3 | NOT NULL |  |
+| [![Cluster Primary Key PK_TrafficCountersMonthly: IDDimDate\Service](../../../../Images/pkcluster.png)](#indexes) | Service | varchar(20) | 20 | NOT NULL |  |
+|  | NSubs | int | 4 | NOT NULL | _Number of subscribers_ |
+|  | Amount | decimal(10,1) | 9 | NOT NULL |  |
+|  | NCalls | bigint | 8 | NOT NULL | _Number of calls_ |
+|  | Units | decimal(10,1) | 9 | NOT NULL |  |
 
 
 ---
@@ -53,9 +53,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

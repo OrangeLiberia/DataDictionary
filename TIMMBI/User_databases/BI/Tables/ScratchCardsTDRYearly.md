@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.ScratchCardsTDRYearly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.ScratchCardsTDRYearly
 
 # ![Tables](../../../../Images/Table32.png) [in].[ScratchCardsTDRYearly]
 
@@ -14,13 +14,13 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | SCAmount | numeric(24,6) | 13 | NOT NULL |  |
-| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | WithLoadDate | bit | 1 | NOT NULL | ((1)) |
-|  | Quantity | bigint | 8 | NOT NULL |  |
-|  | TotalAmount | numeric(24,6) | 13 | NOT NULL |  |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | SCAmount | numeric(24,6) | 13 | NOT NULL |  | _Scratch Card Amount (value)_ |
+| [![Cluster Primary Key PK_ScratchCardsTDRYearly: IDDimDate\SCAmount\WithLoadDate](../../../../Images/pkcluster.png)](#indexes) | WithLoadDate | bit | 1 | NOT NULL | ((1)) |  |
+|  | Quantity | bigint | 8 | NOT NULL |  |  |
+|  | TotalAmount | numeric(24,6) | 13 | NOT NULL |  |  |
 
 
 ---
@@ -49,9 +49,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

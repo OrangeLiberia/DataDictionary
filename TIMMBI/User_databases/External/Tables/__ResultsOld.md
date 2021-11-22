@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [External](../index.md) > [Tables](Tables.md) > dbo.__ResultsOld
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [External](../index.md) > [Tables](Tables.md) > dbo.__ResultsOld
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[__ResultsOld]
 
@@ -33,9 +33,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [RepositoryTemplate](../index.md) > [Tables](Tables.md) > msc.CallsSMO19
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [RepositoryTemplate](../index.md) > [Tables](Tables.md) > msc.CallsSMO19
 
 # ![Tables](../../../../Images/Table32.png) [msc].[CallsSMO19]
 
@@ -49,9 +49,9 @@ MSC Mobile SMS Originator Calls Day 19
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

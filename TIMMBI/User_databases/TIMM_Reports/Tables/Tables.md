@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [TIMM_Reports](../index.md) > Tables
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [TIMM_Reports](../index.md) > Tables
 
 # ![Tables](../../../../Images/Table32.png) Tables
 
@@ -10,6 +10,10 @@
 
 | Name |
 |---|
+| [dbo.258_after_migrate](258_after_migrate.md) |
+| [dbo.5824_before_migrate](5824_before_migrate.md) |
+| [dbo.CBM_FirstFile](CBM_FirstFile.md) |
+| [dbo.CBM_SecondFile](CBM_SecondFile.md) |
 | [dbo.FDD_Numbers](FDD_Numbers.md) |
 | [dbo.inactivemarch](inactivemarch.md) |
 | [dbo.INRechargeConsumptionHistoryV9](INRechargeConsumptionHistoryV9.md) |
@@ -19,6 +23,7 @@
 | [dbo.Numbers](Numbers.md) |
 | [dbo.NumbersWithActivity](NumbersWithActivity.md) |
 | [dbo.NumbersWithActivityBeforeOMEA](NumbersWithActivityBeforeOMEA.md) |
+| [dbo.OMBBS&D](OMBBS&D.md) |
 | [dbo.RechargeConsumptionHistory](RechargeConsumptionHistory.md) |
 | [dbo.rechargeconsumptionhistoryv9](rechargeconsumptionhistoryv9.md) |
 | [dbo.Sanza_IMEI](Sanza_IMEI.md) |
@@ -30,9 +35,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

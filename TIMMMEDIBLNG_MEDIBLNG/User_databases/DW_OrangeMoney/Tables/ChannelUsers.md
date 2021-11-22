@@ -14,7 +14,6 @@ Contains the list of channel-users, operators and merchants that has been creat
 
 | Property | Value |
 |---|---|
-| Collation | Latin1_General_CI_AS |
 | Is Partitioned | YES |
 | Partitioned Column | RefDate |
 
@@ -126,5 +125,5 @@ Contains the list of channel-users, operators and merchants that has been creat
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

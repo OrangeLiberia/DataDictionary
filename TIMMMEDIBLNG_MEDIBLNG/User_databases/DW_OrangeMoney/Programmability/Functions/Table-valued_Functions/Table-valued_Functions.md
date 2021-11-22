@@ -13,6 +13,7 @@
 | [dbo.tvf_AgentTransactions](tvf_AgentTransactions.md) |
 | [dbo.tvf_AllSubscriberTransactions](tvf_AllSubscriberTransactions.md) |
 | [dbo.tvf_APIIntegrationClassification](tvf_APIIntegrationClassification.md) |
+| [dbo.tvf_BuyBundleTransactions](tvf_BuyBundleTransactions.md) |
 | [dbo.tvf_LatestAgentTransactions](tvf_LatestAgentTransactions.md) |
 | [dbo.tvf_LatestSubscriberInjections](tvf_LatestSubscriberInjections.md) |
 | [dbo.tvf_LatestSubscribers](tvf_LatestSubscribers.md) |
@@ -29,5 +30,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

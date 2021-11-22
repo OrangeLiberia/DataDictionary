@@ -10,7 +10,6 @@
 
 | Property | Value |
 |---|---|
-| Collation | Latin1_General_CI_AS |
 | Is Partitioned | YES |
 | Partitioned Column | RefDate |
 
@@ -34,32 +33,35 @@
 |  | SENDER_COUNTRY_CODE | varchar(2) | 2 | NOT NULL |
 |  | RECEIVER_COUNTRY_CODE | varchar(2) | 2 | NOT NULL |
 |  | TRANSACTION_STATUS | varchar(3) | 3 | NOT NULL |
-|  | SENDER_PRE_BALANCE | numeric(17,2) | 9 | NOT NULL |
-|  | SENDER_POST_BALANCE | numeric(17,2) | 9 | NOT NULL |
-|  | RECEIVER_PRE_BALANCE | numeric(17,2) | 9 | NOT NULL |
-|  | RECEIVER_POST_BALANCE | numeric(17,2) | 9 | NOT NULL |
-|  | REFERENCE_NUMBER | varchar(255) | 255 | NOT NULL |
-|  | REMARKS | varchar(150) | 150 | NOT NULL |
-|  | TRANSACTION_ID | varchar(20) | 20 | NOT NULL |
-|  | TRANSACTION_DATE_TIME | datetime | 8 | NOT NULL |
-|  | SENDER_CATEGORY_CODE | varchar(20) | 20 | NOT NULL |
-|  | RECEIVER_CATEGORY_CODE | varchar(20) | 20 | NOT NULL |
-|  | SENDER_DOMAIN_CODE | varchar(10) | 10 | NOT NULL |
-|  | RECEIVER_DOMAIN_CODE | varchar(10) | 10 | NOT NULL |
-|  | SENDER_DESIGNATION | varchar(30) | 30 | NOT NULL |
-|  | RECEIVER_DESIGNATION | varchar(30) | 30 | NOT NULL |
-|  | SENDER_STATE | varchar(60) | 60 | NOT NULL |
-|  | RECEIVER_STATE | varchar(60) | 60 | NOT NULL |
-|  | TRANSACTION_AMOUNT | numeric(17,2) | 9 | NOT NULL |
-|  | COMMISSION_GROSSISTE | numeric(17,2) | 9 | NOT NULL |
-|  | COMMISSION_AGENT | numeric(17,2) | 9 | NOT NULL |
-|  | COMMISSION_OCA | numeric(17,2) | 9 | NOT NULL |
-|  | COMMISSION_AUTRE | numeric(17,2) | 9 | NOT NULL |
-|  | SERVICE_CHARGE_AMOUNT | numeric(17,2) | 9 | NOT NULL |
-|  | TRANSACTION_TAG | varchar(50) | 50 | NOT NULL |
-|  | IS_FINANCIAL | varchar(1) | 1 | NOT NULL |
-|  | ZEBRA | varchar(10) | 10 | NOT NULL |
-|  | ROLLBACKED | varchar(1) | 1 | NOT NULL |
+|  | SENDER_PRE_BALANCE | numeric(17,2) | 9 | NULL allowed |
+|  | SENDER_POST_BALANCE | numeric(17,2) | 9 | NULL allowed |
+|  | RECEIVER_PRE_BALANCE | numeric(17,2) | 9 | NULL allowed |
+|  | RECEIVER_POST_BALANCE | numeric(17,2) | 9 | NULL allowed |
+|  | REFERENCE_NUMBER | varchar(255) | 255 | NULL allowed |
+|  | REMARKS | varchar(150) | 150 | NULL allowed |
+|  | TRANSACTION_ID | varchar(20) | 20 | NULL allowed |
+|  | TRANSACTION_DATE_TIME | datetime | 8 | NULL allowed |
+|  | SENDER_CATEGORY_CODE | varchar(20) | 20 | NULL allowed |
+|  | RECEIVER_CATEGORY_CODE | varchar(20) | 20 | NULL allowed |
+|  | SENDER_DOMAIN_CODE | varchar(10) | 10 | NULL allowed |
+|  | RECEIVER_DOMAIN_CODE | varchar(10) | 10 | NULL allowed |
+|  | SENDER_DESIGNATION | varchar(30) | 30 | NULL allowed |
+|  | RECEIVER_DESIGNATION | varchar(30) | 30 | NULL allowed |
+|  | SENDER_STATE | varchar(60) | 60 | NULL allowed |
+|  | RECEIVER_STATE | varchar(60) | 60 | NULL allowed |
+|  | TRANSACTION_AMOUNT | numeric(17,2) | 9 | NULL allowed |
+|  | COMMISSION_GROSSISTE | numeric(17,2) | 9 | NULL allowed |
+|  | COMMISSION_AGENT | numeric(17,2) | 9 | NULL allowed |
+|  | COMMISSION_OCA | numeric(17,2) | 9 | NULL allowed |
+|  | COMMISSION_AUTRE | numeric(17,2) | 9 | NULL allowed |
+|  | SERVICE_CHARGE_AMOUNT | numeric(17,2) | 9 | NULL allowed |
+|  | TRANSACTION_TAG | varchar(50) | 50 | NULL allowed |
+|  | IS_FINANCIAL | varchar(1) | 1 | NULL allowed |
+|  | ZEBRA | varchar(10) | 10 | NULL allowed |
+|  | ROLLBACKED | varchar(1) | 1 | NULL allowed |
+|  | FOREIGN_CURRENCY_CODE | varchar(20) | 20 | NULL allowed |
+|  | COMMERCIAL_EXCHANGE_RATE | varchar(20) | 20 | NULL allowed |
+|  | REFERENCE_EXCHANGE_RATE | varchar(20) | 20 | NULL allowed |
 
 
 ---
@@ -77,5 +79,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

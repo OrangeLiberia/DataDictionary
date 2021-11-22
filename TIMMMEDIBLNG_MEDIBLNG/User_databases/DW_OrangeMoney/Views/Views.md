@@ -10,6 +10,7 @@
 
 | Name |
 |---|
+| [dbo.vw_BundleConfig](vw_BundleConfig.md) |
 | [dbo.vw_Transactions_3Months](vw_Transactions_3Months.md) |
 | [dbo.vwt_TransactionMSISDNTrackingReport](vwt_TransactionMSISDNTrackingReport.md) |
 | [dbo.vww_AdminAuditTrail](vww_AdminAuditTrail.md) |
@@ -55,5 +56,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

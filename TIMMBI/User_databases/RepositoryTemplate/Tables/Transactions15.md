@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [RepositoryTemplate](../index.md) > [Tables](Tables.md) > in.Transactions15
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [RepositoryTemplate](../index.md) > [Tables](Tables.md) > in.Transactions15
 
 # ![Tables](../../../../Images/Table32.png) [in].[Transactions15]
 
@@ -14,7 +14,7 @@ IN Transactions Day 15
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
 |---|---|---|---|---|---|
-| [![Indexes IX_Transactions15](../../../../Images/Index.png)](#indexes) | TransactionKey | int | 4 | NOT NULL | _Transaction Key_ |
+| [![Indexes IX_Transactions15](../../../../Images/Index.png)](#indexes) | TransactionKey | int | 4 | NOT NULL | _Transaction Key (Foreign Key reference to table [BI].in.[TransactionKeys]_ |
 |  | SubsId | int | 4 | NOT NULL | _IN Subscriber ID_ |
 | [![Indexes IX_Transactions15](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(20) | 20 | NULL allowed | _Subscriber number_ |
 |  | BMSISDN | varchar(20) | 20 | NULL allowed |  |
@@ -40,9 +40,9 @@ IN Transactions Day 15
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

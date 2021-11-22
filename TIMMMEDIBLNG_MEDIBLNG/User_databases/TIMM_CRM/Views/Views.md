@@ -12,6 +12,8 @@
 |---|
 | [dbo.Servicos](Servicos.md) |
 | [dbo.TbccServicos_GSM](TbccServicos_GSM.md) |
+| [dbo.vwc_ActiveCRMSubscribers](vwc_ActiveCRMSubscribers.md) |
+| [dbo.vwc_KYCSubscribers](vwc_KYCSubscribers.md) |
 
 
 ---
@@ -20,5 +22,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

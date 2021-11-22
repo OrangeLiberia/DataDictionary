@@ -22,7 +22,7 @@
 | Property | Value |
 |---|---|
 | SQL Server Version | SQL Server 2016 |
-| Unallocated space | 14527.67 MB |
+| Unallocated space | 14254.40 MB |
 
 
 ---
@@ -42,5 +42,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

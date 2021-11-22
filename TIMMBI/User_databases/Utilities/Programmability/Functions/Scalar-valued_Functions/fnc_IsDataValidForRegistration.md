@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../../../index.md) > [TIMMBI\\BI](../../../../../index.md) > [User databases](../../../../index.md) > [Utilities](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > simreg.fnc_IsDataValidForRegistration
+[Project](../../../../../../index.md) > [192.168.19.120\\BI](../../../../../index.md) > [User databases](../../../../index.md) > [Utilities](../../../index.md) > [Programmability](../../index.md) > [Functions](../index.md) > [Scalar-valued Functions](Scalar-valued_Functions.md) > simreg.fnc_IsDataValidForRegistration
 
 # ![Scalar-valued Functions](../../../../../../Images/Function_Scalar32.png) [simreg].[fnc_IsDataValidForRegistration]
 
@@ -30,9 +30,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

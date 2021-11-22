@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.PyramidConfig
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.PyramidConfig
 
 # ![Tables](../../../../Images/Table32.png) [msc].[PyramidConfig]
 
@@ -17,13 +17,13 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default |
-|---|---|---|---|---|---|---|
-|  | ID | int | 4 | NOT NULL | 1 - 1 |  |
-| [![Cluster Primary Key PK_PyramidConfig: Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) | 10 | NOT NULL |  |  |
-| [![Cluster Primary Key PK_PyramidConfig: Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | IDOrigDest | int | 4 | NOT NULL |  |  |
-|  | Include0Dur | bit | 1 | NULL allowed |  | ((1)) |
-|  | Status | bit | 1 | NULL allowed |  | ((0)) |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default | Description |
+|---|---|---|---|---|---|---|---|
+|  | ID | int | 4 | NOT NULL | 1 - 1 |  |  |
+| [![Cluster Primary Key PK_PyramidConfig: Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) | 10 | NOT NULL |  |  | _Type of the CDR (see [fwk.CallType](CallType.md))_ |
+| [![Cluster Primary Key PK_PyramidConfig: Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | IDOrigDest | int | 4 | NOT NULL |  |  |  |
+|  | Include0Dur | bit | 1 | NULL allowed |  | ((1)) |  |
+|  | Status | bit | 1 | NULL allowed |  | ((0)) |  |
 
 
 ---
@@ -53,9 +53,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

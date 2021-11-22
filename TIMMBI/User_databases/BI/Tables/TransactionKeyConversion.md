@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.TransactionKeyConversion
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.TransactionKeyConversion
 
 # ![Tables](../../../../Images/Table32.png) [in].[TransactionKeyConversion]
 
@@ -17,12 +17,12 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Indexes IX_TransactionKeyConversion](../../../../Images/Index.png)](#indexes) | Accumulator | int | 4 | NOT NULL |
-| [![Indexes IX_TransactionKeyConversion](../../../../Images/Index.png)](#indexes) | ProductID | int | 4 | NULL allowed |
-|  | TransactionKey | int | 4 | NOT NULL |
-|  | Obs | varchar(500) | 500 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Indexes IX_TransactionKeyConversion](../../../../Images/Index.png)](#indexes) | Accumulator | int | 4 | NOT NULL |  |
+| [![Indexes IX_TransactionKeyConversion](../../../../Images/Index.png)](#indexes) | ProductID | int | 4 | NULL allowed |  |
+|  | TransactionKey | int | 4 | NOT NULL | _Transaction Key (see [in.TransactionKeys](TransactionKeys.md))_ |
+|  | Obs | varchar(500) | 500 | NULL allowed |  |
 
 
 ---
@@ -50,9 +50,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

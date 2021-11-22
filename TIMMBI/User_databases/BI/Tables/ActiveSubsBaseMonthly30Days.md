@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > dbo.ActiveSubsBaseMonthly30Days
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > dbo.ActiveSubsBaseMonthly30Days
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[ActiveSubsBaseMonthly30Days]
 
@@ -17,18 +17,18 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Primary Key PK_ActiveSubsBaseMonthly30Days: IDDimDate\MSISDN](../../../../Images/pk.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-| [![Primary Key PK_ActiveSubsBaseMonthly30Days: IDDimDate\MSISDN](../../../../Images/pk.png)](#indexes) | MSISDN | varchar(9) | 9 | NOT NULL |
-|  | Active | tinyint | 1 | NULL allowed |
-|  | MOCalls | int | 4 | NULL allowed |
-|  | MOSMS | int | 4 | NULL allowed |
-|  | HasData | int | 4 | NULL allowed |
-|  | VAS | int | 4 | NULL allowed |
-|  | RoamingMO | int | 4 | NULL allowed |
-|  | OM | int | 4 | NULL allowed |
-|  | OutEvent | int | 4 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Primary Key PK_ActiveSubsBaseMonthly30Days: IDDimDate\MSISDN](../../../../Images/pk.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Primary Key PK_ActiveSubsBaseMonthly30Days: IDDimDate\MSISDN](../../../../Images/pk.png)](#indexes) | MSISDN | varchar(9) | 9 | NOT NULL |  |
+|  | Active | tinyint | 1 | NULL allowed |  |
+|  | MOCalls | int | 4 | NULL allowed | _Number of MO calls_ |
+|  | MOSMS | int | 4 | NULL allowed |  |
+|  | HasData | int | 4 | NULL allowed |  |
+|  | VAS | int | 4 | NULL allowed |  |
+|  | RoamingMO | int | 4 | NULL allowed |  |
+|  | OM | int | 4 | NULL allowed |  |
+|  | OutEvent | int | 4 | NULL allowed |  |
 
 
 ---
@@ -42,9 +42,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

@@ -21,7 +21,8 @@
 |---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_TBrmgAgreements: IDAgreement](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_LastClosedAgreements
 IX_AgreemntDate
-ix_TBrmgAgreements_PLMNIDParentOperator_DateBegin](../../../../Images/Index.png)](#indexes)(3) | IDAgreement | bigint | 8 | NOT NULL | 1 - 1 |  |
+ix_TBrmgAgreements_PLMNIDParentOperator_DateBegin
+IX_DMP_Processing](../../../../Images/Index.png)](#indexes)(4) | IDAgreement | bigint | 8 | NOT NULL | 1 - 1 |  |
 |  | AgreementName | varchar(200) | 200 | NULL allowed |  |  |
 |  | Version | varchar(10) | 10 | NULL allowed |  |  |
 | [![Indexes ix_TBrmgAgreements_PLMNIDParentOperator_DateBegin](../../../../Images/Index.png)](#indexes) | IDHomeOperator | int | 4 | NOT NULL |  |  |
@@ -40,7 +41,7 @@ ix_TBrmgAgreements_PLMNIDParentOperator_DateBegin](../../../../Images/Index.png)
 |  | TipoMoedaID | int | 4 | NULL allowed |  |  |
 |  | LastuserID | int | 4 | NOT NULL |  |  |
 |  | Lastupdate | datetime | 8 | NOT NULL |  | (getdate()) |
-|  | RatingType | varchar(20) | 20 | NOT NULL |  | ('DLYRT') |
+| [![Indexes IX_DMP_Processing](../../../../Images/Index.png)](#indexes) | RatingType | varchar(20) | 20 | NOT NULL |  | ('DLYRT') |
 |  | PLMNIDHomeOperator | varchar(7) | 7 | NULL allowed |  |  |
 | [![Indexes IX_LastClosedAgreements](../../../../Images/Index.png)](#indexes) | PLMNIDOperator | varchar(7) | 7 | NULL allowed |  |  |
 
@@ -60,5 +61,5 @@ ix_TBrmgAgreements_PLMNIDParentOperator_DateBegin](../../../../Images/Index.png)
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

@@ -14,7 +14,6 @@ New Subscribers and Subscribers updates
 
 | Property | Value |
 |---|---|
-| Collation | Latin1_General_CI_AS |
 | Is Partitioned | YES |
 | Partitioned Column | RefDate |
 
@@ -119,5 +118,5 @@ New Subscribers and Subscribers updates
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

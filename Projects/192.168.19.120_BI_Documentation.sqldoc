@@ -477,7 +477,7 @@
     <Option uri="http://sqldoc/project/outputname/" value="TIMMBI" />
     <Option uri="http://sqldoc/project/cover/include/" value="True" />
     <Option uri="http://sqldoc/project/server_alias/" value="" />
-    <Option uri="http://sqldoc/project/outputpath/" value="C:\Users\WDAGUtilityAccount\Documents\My Database Documentation" />
+    <Option uri="http://sqldoc/project/outputpath/" value="C:\Users\WDAGUtilityAccount\Documents" />
     <Option uri="http://sqldoc/project/outputname/addtimestamp/" value="False" />
     <Option uri="http://sqldoc/project/footer/date/format/" value="dddd, MMMM d, yyyy h:mm:ss tt" />
     <Option uri="http://sqldoc/project/header/breadcrumbs/include/" value="True" />

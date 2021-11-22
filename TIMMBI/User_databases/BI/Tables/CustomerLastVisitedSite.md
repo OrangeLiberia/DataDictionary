@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CustomerLastVisitedSite
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CustomerLastVisitedSite
 
 # ![Tables](../../../../Images/Table32.png) [msc].[CustomerLastVisitedSite]
 
@@ -17,11 +17,11 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_CustomerLastVisitedSite: MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |
-|  | CellID | int | 4 | NOT NULL |
-|  | DateTime | datetime | 8 | NOT NULL |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_CustomerLastVisitedSite: MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |  |
+|  | CellID | int | 4 | NOT NULL | _Phone IMEI (imported from msc from aproximated time of CDR)_ |
+|  | DateTime | datetime | 8 | NOT NULL |  |
 
 
 ---
@@ -56,9 +56,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

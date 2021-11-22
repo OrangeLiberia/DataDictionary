@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.CustomerUsageDaily1
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.CustomerUsageDaily1
 
 # ![Tables](../../../../Images/Table32.png) [in].[CustomerUsageDaily1]
 
@@ -17,65 +17,65 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_CustomerUsageDaily1: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CustomerUsageDaily1: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) |  | 32 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1OnNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1OffNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1Intl | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW2 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3OnNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3OffNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3Intl | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4OnNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4OffNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4Intl | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW5 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6OnNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6OffNet | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6Intl | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | 4GOutOfBundle | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW1 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW2 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW3 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW4 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW5 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW6 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1P | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1N | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4P | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4N | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountP | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountN | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | 4GBundles | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactionsP | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactionsN | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW1 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW2 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW3 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW4 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW5 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW6 | decimal(20,5) |  | 13 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | NMOCalls | int |  | 4 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | MOCDurSec | bigint |  | 8 | NOT NULL |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | NSMOC | int |  | 4 | NOT NULL |  |
+| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_CustomerUsageDaily1: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_CustomerUsageDaily1: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) |  | 32 | NOT NULL |  |  |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 1_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1OnNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 1 on Onnet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1OffNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 1 on OffNet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW1Intl | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 1 on International_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW2 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 2_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 3_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3OnNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 3 on Onnet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3OffNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 3 on OffNet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW3Intl | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 3 on International_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 4_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4OnNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 4 on Onnet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4OffNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 4 on OffNet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW4Intl | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 4 on International_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW5 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 5_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 6_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6OnNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 6 on Onnet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6OffNet | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 6 on OffNet_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | ChargeableAmountW6Intl | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on Wallet 6 on International_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | 4GOutOfBundle | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on data PAYGO_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW1 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 1_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW2 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 2_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW3 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 3_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW4 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 4_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW5 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 5_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RechargeAmountW6 | decimal(20,5) |  | 13 | NOT NULL |  | _Amount recharged on Wallet 6_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1P | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered on Wallet 1 Positive_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1N | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered on Wallet 1 Negative_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4P | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered on Wallet 4 Positive_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4N | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered on Wallet 4 Negative_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountP | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered Positive_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountN | decimal(20,5) |  | 13 | NOT NULL |  | _Amount transfered Negative_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | 4GBundles | decimal(20,5) |  | 13 | NOT NULL |  | _Amount charged on data bundles_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactionsP | decimal(20,5) |  | 13 | NOT NULL |  | _Amount on other transactions Positive_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactionsN | decimal(20,5) |  | 13 | NOT NULL |  | _Amount on other transactions Negative_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW1 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 1_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW2 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 2_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW3 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 3_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW4 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 4_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW5 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 5_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | RemainCreditW6 | decimal(20,5) |  | 13 | NOT NULL |  | _Remain credit on Wallet 6_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | NMOCalls | int |  | 4 | NOT NULL |  | _Number of MO calls_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | MOCDurSec | bigint |  | 8 | NOT NULL |  | _Duration of MO calls_ |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | NSMOC | int |  | 4 | NOT NULL |  | _Number of MO sms_ |
 | [![Indexes IX_BaseView_CUD1
-IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | ChargeableAmount | decimal(25,5) | YES | 13 | NULL allowed |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactions | decimal(21,5) | YES | 13 | NULL allowed |  |
+IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | ChargeableAmount | decimal(25,5) | YES | 13 | NULL allowed |  |  |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | OtherTransactions | decimal(21,5) | YES | 13 | NULL allowed |  |  |
 | [![Indexes IX_BaseView_CUD1
-IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | RechargeAmount | decimal(25,5) | YES | 13 | NULL allowed |  |
+IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | RechargeAmount | decimal(25,5) | YES | 13 | NULL allowed |  |  |
 | [![Indexes IX_BaseView_CUD1
-IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | TransferAmount | decimal(21,5) | YES | 13 | NULL allowed |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1 | decimal(21,5) | YES | 13 | NULL allowed |  |
-| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4 | decimal(21,5) | YES | 13 | NULL allowed |  |
-|  | ChargeableAmountOMWLRD | decimal(20,5) |  | 13 | NOT NULL | ((0)) |
-|  | ChargeableAmountOMWUSD | decimal(20,5) |  | 13 | NOT NULL | ((0)) |
-|  | ChargeableAmountOM | decimal(21,5) | YES | 13 | NULL allowed |  |
+IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | TransferAmount | decimal(21,5) | YES | 13 | NULL allowed |  |  |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW1 | decimal(21,5) | YES | 13 | NULL allowed |  |  |
+| [![Indexes IX_VIEW](../../../../Images/Index.png)](#indexes) | TransferAmountW4 | decimal(21,5) | YES | 13 | NULL allowed |  |  |
+|  | ChargeableAmountOMWLRD | decimal(20,5) |  | 13 | NOT NULL | ((0)) |  |
+|  | ChargeableAmountOMWUSD | decimal(20,5) |  | 13 | NOT NULL | ((0)) |  |
+|  | ChargeableAmountOM | decimal(21,5) | YES | 13 | NULL allowed |  |  |
 
 
 ---
@@ -124,9 +124,9 @@ IX_VIEW](../../../../Images/Index.png)](#indexes)(2) | TransferAmount | decimal(
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

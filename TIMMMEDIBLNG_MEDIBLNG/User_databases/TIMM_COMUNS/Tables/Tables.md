@@ -12,6 +12,7 @@
 |---|
 | [dbo.CurrencyConversion](CurrencyConversion.md) |
 | [dbo.TaxasCambio](TaxasCambio.md) |
+| [dbo.Tcom_WNP_CNS_PLMNID](Tcom_WNP_CNS_PLMNID.md) |
 | [dbo.Tcom_WNP_Continent](Tcom_WNP_Continent.md) |
 | [dbo.Tcom_WNP_CountryCodes](Tcom_WNP_CountryCodes.md) |
 | [dbo.Tcom_WNP_Locations](Tcom_WNP_Locations.md) |
@@ -63,5 +64,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

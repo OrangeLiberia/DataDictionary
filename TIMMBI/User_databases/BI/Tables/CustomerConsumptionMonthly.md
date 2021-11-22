@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > orange.CustomerConsumptionMonthly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > orange.CustomerConsumptionMonthly
 
 # ![Tables](../../../../Images/Table32.png) [orange].[CustomerConsumptionMonthly]
 
@@ -17,35 +17,35 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_CustomerConsumptionMonthly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-|  | Month | date | 3 | NOT NULL |
-| [![Cluster Primary Key PK_CustomerConsumptionMonthly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(20) | 20 | NOT NULL |
-|  | N143SMSs | bigint | 8 | NULL allowed |
-|  | N143Calls | bigint | 8 | NULL allowed |
-|  | 143RealSeconds | float | 8 | NULL allowed |
-|  | 143BillSeconds | float | 8 | NULL allowed |
-|  | 143FeeAmount | float | 8 | NULL allowed |
-|  | RechargesAmount | float | 8 | NULL allowed |
-|  | NRecharges | bigint | 8 | NULL allowed |
-|  | DataMB | float | 8 | NULL allowed |
-|  | TotalConsumedAmount | float | 8 | NULL allowed |
-|  | SMSConsumedAmount | float | 8 | NULL allowed |
-|  | VoiceConsumedAmount | float | 8 | NULL allowed |
-|  | DataConsumedAmount | float | 8 | NULL allowed |
-|  | VoiceConsumedOnNet | float | 8 | NULL allowed |
-|  | VoiceConsumedOffNet | float | 8 | NULL allowed |
-|  | VoiceConsumedIntl | float | 8 | NULL allowed |
-|  | SMSConsumedOnNet | float | 8 | NULL allowed |
-|  | SMSConsumedOffNet | float | 8 | NULL allowed |
-|  | SMSConsumedIntl | float | 8 | NULL allowed |
-|  | OnNetSeconds | float | 8 | NULL allowed |
-|  | OffNetSeconds | float | 8 | NULL allowed |
-|  | IntlSeconds | float | 8 | NULL allowed |
-|  | OnNetSMS | bigint | 8 | NULL allowed |
-|  | OffNetSMS | bigint | 8 | NULL allowed |
-|  | IntlSMS | bigint | 8 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_CustomerConsumptionMonthly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+|  | Month | date | 3 | NOT NULL |  |
+| [![Cluster Primary Key PK_CustomerConsumptionMonthly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(20) | 20 | NOT NULL |  |
+|  | N143SMSs | bigint | 8 | NULL allowed |  |
+|  | N143Calls | bigint | 8 | NULL allowed |  |
+|  | 143RealSeconds | float | 8 | NULL allowed |  |
+|  | 143BillSeconds | float | 8 | NULL allowed |  |
+|  | 143FeeAmount | float | 8 | NULL allowed |  |
+|  | RechargesAmount | float | 8 | NULL allowed |  |
+|  | NRecharges | bigint | 8 | NULL allowed |  |
+|  | DataMB | float | 8 | NULL allowed |  |
+|  | TotalConsumedAmount | float | 8 | NULL allowed |  |
+|  | SMSConsumedAmount | float | 8 | NULL allowed |  |
+|  | VoiceConsumedAmount | float | 8 | NULL allowed |  |
+|  | DataConsumedAmount | float | 8 | NULL allowed |  |
+|  | VoiceConsumedOnNet | float | 8 | NULL allowed |  |
+|  | VoiceConsumedOffNet | float | 8 | NULL allowed |  |
+|  | VoiceConsumedIntl | float | 8 | NULL allowed |  |
+|  | SMSConsumedOnNet | float | 8 | NULL allowed |  |
+|  | SMSConsumedOffNet | float | 8 | NULL allowed |  |
+|  | SMSConsumedIntl | float | 8 | NULL allowed |  |
+|  | OnNetSeconds | float | 8 | NULL allowed |  |
+|  | OffNetSeconds | float | 8 | NULL allowed |  |
+|  | IntlSeconds | float | 8 | NULL allowed |  |
+|  | OnNetSMS | bigint | 8 | NULL allowed |  |
+|  | OffNetSMS | bigint | 8 | NULL allowed |  |
+|  | IntlSMS | bigint | 8 | NULL allowed |  |
 
 
 ---
@@ -73,9 +73,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

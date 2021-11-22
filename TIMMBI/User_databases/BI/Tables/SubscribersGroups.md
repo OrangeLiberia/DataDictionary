@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.SubscribersGroups
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.SubscribersGroups
 
 # ![Tables](../../../../Images/Table32.png) [in].[SubscribersGroups]
 
@@ -17,14 +17,14 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |
-|  | IDRange | int | 4 | NOT NULL |
-|  | Range | varchar(30) | 30 | NULL allowed |
-|  | RateBill | float | 8 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int | 4 | NOT NULL | _ID of the Calling Number (see [fwk.CallsOrigDest](CallsOrigDest.md))_ |
+| [![Cluster Primary Key PK_SubscribersGroups: IDDimDate\IDOrig\MSISDN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |  |
+|  | IDRange | int | 4 | NOT NULL | _ID of the ARPU Range (see [in.ARPURanges](ARPURanges.md))_ |
+|  | Range | varchar(30) | 30 | NULL allowed |  |
+|  | RateBill | float | 8 | NULL allowed |  |
 
 
 ---
@@ -56,9 +56,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

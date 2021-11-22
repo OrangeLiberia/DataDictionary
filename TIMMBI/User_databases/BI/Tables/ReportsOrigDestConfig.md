@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > fwk.ReportsOrigDestConfig
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > fwk.ReportsOrigDestConfig
 
 # ![Tables](../../../../Images/Table32.png) [fwk].[ReportsOrigDestConfig]
 
@@ -17,15 +17,15 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default |
-|---|---|---|---|---|---|---|
-| [![Indexes UNQ_ReportsOrigDestConfig](../../../../Images/Index.png)](#indexes) | ID | int | 4 | NOT NULL | 1 - 1 |  |
-| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | ReportName | varchar(50) | 50 | NOT NULL |  |  |
-| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) | 10 | NOT NULL |  |  |
-| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | IDOrigDest | int | 4 | NOT NULL |  |  |
-|  | IsGroup | bit | 1 | NOT NULL |  | ((0)) |
-|  | IsTopMostGroup | bit | 1 | NOT NULL |  | ((0)) |
-|  | IDOrigDestFinal | int | 4 | NOT NULL |  |  |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![Indexes UNQ_ReportsOrigDestConfig](../../../../Images/Index.png)](#indexes) | ID | int | 4 | NOT NULL | 1 - 1 |  |  |
+| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | ReportName | varchar(50) | 50 | NOT NULL |  |  |  |
+| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) | 10 | NOT NULL |  |  | _Type of the CDR (see [fwk.CallType](CallType.md))_ |
+| [![Cluster Primary Key PK_ReportsOrigDestConfig: ReportName\Type\IDOrigDest](../../../../Images/pkcluster.png)](#indexes) | IDOrigDest | int | 4 | NOT NULL |  |  |  |
+|  | IsGroup | bit | 1 | NOT NULL |  | ((0)) |  |
+|  | IsTopMostGroup | bit | 1 | NOT NULL |  | ((0)) |  |
+|  | IDOrigDestFinal | int | 4 | NOT NULL |  |  |  |
 
 
 ---
@@ -54,9 +54,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

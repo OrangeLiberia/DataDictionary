@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Project Version="3" ApproxVals="1070" Server="192.168.19.11\MEDIBLNG" Database="" AuthenticationType="SqlPassword" User="sa">
+<Project Version="3" ApproxVals="1158" Server="192.168.19.11\MEDIBLNG" Database="" AuthenticationType="SqlPassword" User="sa">
   <Options>
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/include/" value="True" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/security/include/" value="False" />
@@ -67,7 +67,6 @@
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/views/sections/extendedproperties/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/views/sections/permissions/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/sections/properties/heap/include/" value="False" />
-    <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/sections/properties/collation/include/" value="True" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/views/sections/triggers/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/sections/properties/filestreamfilegroup/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/sections/properties/filestreamfilegroups/include/" value="False" />
@@ -1055,13 +1054,102 @@
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/[dbo.Bonus_SalaryPayment_Config]/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/[dbo.Bonus_SalaryPayment]/include/" value="False" />
     <Option uri="http://sqldoc/project/selections/databases/user/[DW_OrangeMoney]/tables/sections/indexes/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Reports]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/security/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/programmability/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Reports]/security/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Reports]/programmability/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/tables/[dbo._tbc_V9CampaignsBundleOMConfig_deprecated]/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/tables/[dbo._Orange_Liberia_DEC2020_Transactions]/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/tables/[dbo._IMEI]/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_Report]/tables/[dbo.SLEEDR_old]/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/security/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/programmability/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/synonyms/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/views/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchConfig]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/include/" value="True" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.DMP_SwitchCellIDs]/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs]/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_2GCellIDs_Hist]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs]/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_3GCellIDs_Hist]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs]/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_4GCellIDs_Hist]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/properties/rowcount(~)/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs]/sections/permissions/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/filestreamfilegroup/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/heap/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/fulltextcatalog/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/fulltextkeyindex/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/fulltextstoplist/include/" value="False" />
+    <Option uri="http://sqldoc/project/selections/databases/user/[TIMM_DMP]/tables/[dbo.MSC_TDDCellIDs_Hist]/sections/properties/rowcount(~)/include/" value="False" />
     <Option uri="http://sqldoc/project/description/" value="" />
     <Option uri="http://sqldoc/project/outputstyle/selected/" value="Markdown" />
     <Option uri="http://sqldoc/project/name/" value="192.168.19.11\MEDIBLNG Documentation" />
     <Option uri="http://sqldoc/project/outputname/" value="TIMMMEDIBLNG_MEDIBLNG" />
     <Option uri="http://sqldoc/project/cover/include/" value="True" />
     <Option uri="http://sqldoc/project/server_alias/" value="" />
-    <Option uri="http://sqldoc/project/outputpath/" value="C:\Users\WDAGUtilityAccount\Documents\My Database Documentation" />
+    <Option uri="http://sqldoc/project/outputpath/" value="C:\Users\WDAGUtilityAccount\Documents" />
     <Option uri="http://sqldoc/project/outputname/addtimestamp/" value="True" />
     <Option uri="http://sqldoc/project/footer/date/format/" value="dddd, MMMM d, yyyy h:mm:ss tt" />
     <Option uri="http://sqldoc/project/header/breadcrumbs/include/" value="True" />

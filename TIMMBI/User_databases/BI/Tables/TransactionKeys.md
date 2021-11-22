@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.TransactionKeys
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.TransactionKeys
 
 # ![Tables](../../../../Images/Table32.png) [in].[TransactionKeys]
 
@@ -17,19 +17,19 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_TransactionKeys: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL |  |
-| [![Indexes IX_TransactionKeys](../../../../Images/Index.png)](#indexes) | Source | varchar(5) | 5 | NOT NULL |  |
-| [![Indexes IX_TransactionKeys](../../../../Images/Index.png)](#indexes) | ShortName | varchar(50) | 50 | NULL allowed |  |
-|  | Description | varchar(200) | 200 | NOT NULL |  |
-|  | Fee | bit | 1 | NOT NULL | ((0)) |
-|  | Bonus | bit | 1 | NOT NULL | ((0)) |
-|  | Recharge | bit | 1 | NOT NULL | ((0)) |
-|  | Transfer | bit | 1 | NOT NULL | ((0)) |
-|  | Type | varchar(10) | 10 | NULL allowed |  |
-|  | IDOrigDest | int | 4 | NULL allowed |  |
-|  | FeeOM | bit | 1 | NOT NULL | ((0)) |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_TransactionKeys: ID](../../../../Images/pkcluster.png)](#indexes) | ID | int | 4 | NOT NULL |  |  |
+| [![Indexes IX_TransactionKeys](../../../../Images/Index.png)](#indexes) | Source | varchar(5) | 5 | NOT NULL |  | _Source of the data_ |
+| [![Indexes IX_TransactionKeys](../../../../Images/Index.png)](#indexes) | ShortName | varchar(50) | 50 | NULL allowed |  |  |
+|  | Description | varchar(200) | 200 | NOT NULL |  |  |
+|  | Fee | bit | 1 | NOT NULL | ((0)) |  |
+|  | Bonus | bit | 1 | NOT NULL | ((0)) |  |
+|  | Recharge | bit | 1 | NOT NULL | ((0)) |  |
+|  | Transfer | bit | 1 | NOT NULL | ((0)) |  |
+|  | Type | varchar(10) | 10 | NULL allowed |  | _Type of the CDR (see [fwk.CallType](CallType.md))_ |
+|  | IDOrigDest | int | 4 | NULL allowed |  |  |
+|  | FeeOM | bit | 1 | NOT NULL | ((0)) |  |
 
 
 ---
@@ -71,9 +71,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../../index.md) > [TIMMBI\\BI](../../../../index.md) > [User databases](../../../index.md) > [BI](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > in.spt_LoadTransferMoneyDist
+[Project](../../../../../index.md) > [192.168.19.120\\BI](../../../../index.md) > [User databases](../../../index.md) > [BI](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > in.spt_LoadTransferMoneyDist
 
 # ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [in].[spt_LoadTransferMoneyDist]
 
@@ -16,9 +16,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

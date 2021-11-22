@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.SubsCallsDistYearly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.SubsCallsDistYearly
 
 # ![Tables](../../../../Images/Table32.png) [in].[SubsCallsDistYearly]
 
@@ -17,32 +17,32 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) |  | 32 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  |
-|  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) |
-|  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RealDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RealDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | BillDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | BillDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) |
-|  | RateBillDur | float |  | 8 | NOT NULL | ((0)) |
-|  | RateRealDur | float |  | 8 | NOT NULL | ((0)) |
-|  | DurSec0Cost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecBill0Cost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecBillCost | bigint | YES | 8 | NOT NULL |  |
-|  | DurSecCost | bigint | YES | 8 | NOT NULL |  |
-|  | NCalls0Cost | bigint | YES | 8 | NULL allowed |  |
-|  | NCallsCost | bigint | YES | 8 | NOT NULL |  |
-|  | RateBill | float | YES | 8 | NOT NULL |  |
-|  | RateDur | float | YES | 8 | NOT NULL |  |
+| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | MSISDN | varchar(32) |  | 32 | NOT NULL |  |  |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | Type | varchar(10) |  | 10 | NOT NULL |  | _Type of the CDR (see [fwk.CallType](CallType.md))_ |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDOrig | int |  | 4 | NOT NULL |  | _ID of the Calling Number (see [fwk.CallsOrigDest](CallsOrigDest.md))_ |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IDDest | int |  | 4 | NOT NULL |  | _ID of the Called Number (see [fwk.CallsOrigDest](CallsOrigDest.md))_ |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | WalletID | int |  | 4 | NOT NULL |  | _Wallet ID (see [in.WalletTypes](WalletTypes.md))_ |
+| [![Cluster Primary Key PK_SubsCallsDistYearly: IDDimDate\MSISDN\Type\IDOrig\IDDest\WalletID\IN](../../../../Images/pkcluster.png)](#indexes) | IN | tinyint |  | 1 | NOT NULL |  | _IN ID (see [in.INs](INs.md))_ |
+|  | NCallAttempts | bigint |  | 8 | NOT NULL | ((0)) | _Number of attempted calls_ |
+|  | NSuccFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | _Number of success free calls_ |
+|  | NSuccChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | _Number of sucess charged calls_ |
+|  | RealDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | _Real duration of free calls_ |
+|  | RealDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | _Real duration of charged calls_ |
+|  | BillDurSecFreeCalls | bigint |  | 8 | NOT NULL | ((0)) | _Rounded duration of free calls_ |
+|  | BillDurSecChrgCalls | bigint |  | 8 | NOT NULL | ((0)) | _Rounded duration of charged calls_ |
+|  | RateBillDur | float |  | 8 | NOT NULL | ((0)) | _Rate of Rounded duration_ |
+|  | RateRealDur | float |  | 8 | NOT NULL | ((0)) | _Rate of Real duration_ |
+|  | DurSec0Cost | bigint | YES | 8 | NOT NULL |  |  |
+|  | DurSecBill0Cost | bigint | YES | 8 | NOT NULL |  |  |
+|  | DurSecBillCost | bigint | YES | 8 | NOT NULL |  |  |
+|  | DurSecCost | bigint | YES | 8 | NOT NULL |  |  |
+|  | NCalls0Cost | bigint | YES | 8 | NULL allowed |  |  |
+|  | NCallsCost | bigint | YES | 8 | NOT NULL |  |  |
+|  | RateBill | float | YES | 8 | NOT NULL |  |  |
+|  | RateDur | float | YES | 8 | NOT NULL |  |  |
 
 
 ---
@@ -88,9 +88,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

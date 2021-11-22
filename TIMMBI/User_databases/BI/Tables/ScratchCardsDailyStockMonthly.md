@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.ScratchCardsDailyStockMonthly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > in.ScratchCardsDailyStockMonthly
 
 # ![Tables](../../../../Images/Table32.png) [in].[ScratchCardsDailyStockMonthly]
 
@@ -14,16 +14,16 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_ScratchCardsDailyStockMonthly: IDDimDate\CardAmount](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_ScratchCardsDailyStockMonthly: IDDimDate\CardAmount](../../../../Images/pkcluster.png)](#indexes) | CardAmount | numeric(18,6) | 9 | NOT NULL |
-|  | NCards | int | 4 | NOT NULL |
-|  | TotalAmount | numeric(38,6) | 17 | NOT NULL |
-|  | NLoadedCards | int | 4 | NOT NULL |
-|  | NUnloadCards | int | 4 | NOT NULL |
-|  | AmountLoaded | numeric(38,6) | 17 | NOT NULL |
-|  | AmountUnLoaded | numeric(38,6) | 17 | NOT NULL |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_ScratchCardsDailyStockMonthly: IDDimDate\CardAmount](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_ScratchCardsDailyStockMonthly: IDDimDate\CardAmount](../../../../Images/pkcluster.png)](#indexes) | CardAmount | numeric(18,6) | 9 | NOT NULL |  |
+|  | NCards | int | 4 | NOT NULL |  |
+|  | TotalAmount | numeric(38,6) | 17 | NOT NULL |  |
+|  | NLoadedCards | int | 4 | NOT NULL |  |
+|  | NUnloadCards | int | 4 | NOT NULL |  |
+|  | AmountLoaded | numeric(38,6) | 17 | NOT NULL |  |
+|  | AmountUnLoaded | numeric(38,6) | 17 | NOT NULL |  |
 
 
 ---
@@ -52,9 +52,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

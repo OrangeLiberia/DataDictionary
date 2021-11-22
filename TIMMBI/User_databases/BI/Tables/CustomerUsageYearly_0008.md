@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CustomerUsageYearly
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CustomerUsageYearly
 
 # ![Tables](../../../../Images/Table32.png) [msc].[CustomerUsageYearly]
 
@@ -17,38 +17,38 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Cluster Primary Key PK_CustomerUsageYearly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CustomerUsageYearly](../../../../Images/Index.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-| [![Cluster Primary Key PK_CustomerUsageYearly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CustomerUsageYearly](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |
-|  | IDOrigDest | int | 4 | NOT NULL |
-|  | MOCalls | int | 4 | NOT NULL |
-|  | MODurSec | int | 4 | NOT NULL |
-|  | MOOnNetCalls | int | 4 | NOT NULL |
-|  | MOOnNetDurSec | int | 4 | NOT NULL |
-|  | MOOffNetCalls | int | 4 | NOT NULL |
-|  | MOOffNetDurSec | int | 4 | NOT NULL |
-|  | MOIntlCalls | int | 4 | NOT NULL |
-|  | MOIntlDurSec | int | 4 | NOT NULL |
-|  | MTCalls | int | 4 | NOT NULL |
-|  | MTDurSec | int | 4 | NOT NULL |
-|  | MTOnNetCalls | int | 4 | NOT NULL |
-|  | MTOnNetDurSec | int | 4 | NOT NULL |
-|  | MTOffNetCalls | int | 4 | NOT NULL |
-|  | MTOffNetDurSec | int | 4 | NOT NULL |
-|  | MTIntlCalls | int | 4 | NOT NULL |
-|  | MTIntlDurSec | int | 4 | NOT NULL |
-|  | SMO | int | 4 | NOT NULL |
-|  | SMOOnNet | int | 4 | NOT NULL |
-|  | SMOOffNet | int | 4 | NOT NULL |
-|  | SMOIntl | int | 4 | NOT NULL |
-|  | SMT | int | 4 | NOT NULL |
-|  | SMTOnNet | int | 4 | NOT NULL |
-|  | SMTOffNet | int | 4 | NOT NULL |
-|  | SMTIntl | int | 4 | NOT NULL |
-|  | USSD | int | 4 | NOT NULL |
-|  | DataUpMb | numeric(18,6) | 9 | NULL allowed |
-|  | DataDownMb | numeric(18,6) | 9 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_CustomerUsageYearly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CustomerUsageYearly](../../../../Images/Index.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_CustomerUsageYearly: IDDimDate\MSISDN](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_CustomerUsageYearly](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |  |
+|  | IDOrigDest | int | 4 | NOT NULL |  |
+|  | MOCalls | int | 4 | NOT NULL | _Number of MO calls_ |
+|  | MODurSec | int | 4 | NOT NULL | _Duration of MO calls_ |
+|  | MOOnNetCalls | int | 4 | NOT NULL | _Number of MO OnNet calls_ |
+|  | MOOnNetDurSec | int | 4 | NOT NULL | _Duration of MO OnNet calls_ |
+|  | MOOffNetCalls | int | 4 | NOT NULL | _Number of MO OffNet calls_ |
+|  | MOOffNetDurSec | int | 4 | NOT NULL | _Duration of MO OffNet calls_ |
+|  | MOIntlCalls | int | 4 | NOT NULL | _Number of MO International calls_ |
+|  | MOIntlDurSec | int | 4 | NOT NULL | _Duration of MO International calls_ |
+|  | MTCalls | int | 4 | NOT NULL | _Number of MT calls_ |
+|  | MTDurSec | int | 4 | NOT NULL | _Duration of MT calls_ |
+|  | MTOnNetCalls | int | 4 | NOT NULL | _Number of MT OnNet calls_ |
+|  | MTOnNetDurSec | int | 4 | NOT NULL | _Duration of MT OnNet calls_ |
+|  | MTOffNetCalls | int | 4 | NOT NULL | _Number of MT OffNet calls_ |
+|  | MTOffNetDurSec | int | 4 | NOT NULL | _Duration of MT OffNet calls_ |
+|  | MTIntlCalls | int | 4 | NOT NULL | _Number of MT International calls_ |
+|  | MTIntlDurSec | int | 4 | NOT NULL | _Duration of MT International calls_ |
+|  | SMO | int | 4 | NOT NULL | _Number of MO SMS_ |
+|  | SMOOnNet | int | 4 | NOT NULL | _Number of MO OnNet SMS_ |
+|  | SMOOffNet | int | 4 | NOT NULL | _Number of MO OffNet SMS_ |
+|  | SMOIntl | int | 4 | NOT NULL | _Number of MO International SMS_ |
+|  | SMT | int | 4 | NOT NULL | _Number of MT SMS_ |
+|  | SMTOnNet | int | 4 | NOT NULL | _Number of MT OnNet SMS_ |
+|  | SMTOffNet | int | 4 | NOT NULL | _Number of MT OffNet SMS_ |
+|  | SMTIntl | int | 4 | NOT NULL | _Number of MT International SMS_ |
+|  | USSD | int | 4 | NOT NULL |  |
+|  | DataUpMb | numeric(18,6) | 9 | NULL allowed | _Total MB uploaded_ |
+|  | DataDownMb | numeric(18,6) | 9 | NULL allowed | _Total MB downloaded_ |
 
 
 ---
@@ -82,9 +82,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

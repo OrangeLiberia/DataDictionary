@@ -14,7 +14,6 @@ Contains new and updated transactions (tag ACTION_TYPE indicates if the transact
 
 | Property | Value |
 |---|---|
-| Collation | Latin1_General_CI_AS |
 | Is Partitioned | YES |
 | Partitioned Column | RefDate |
 
@@ -27,21 +26,21 @@ Contains new and updated transactions (tag ACTION_TYPE indicates if the transact
 |---|---|---|---|---|---|
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | FileID | bigint | 8 | NOT NULL | _Unique File Identifier_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | ID | int | 4 | NOT NULL | _Unique Data Line within a file_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | RefDate | date | 3 | NOT NULL | _Date of the file_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | CurrencyType | varchar(16) | 16 | NOT NULL | _Currency (USD/LRD)_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SENDER_MSISDN | varchar(15) | 15 | NOT NULL | _MSISDN of the sender of the transaction_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | RECEIVER_MSISDN | varchar(15) | 15 | NOT NULL | _MSISDN of the receiver of the transaction_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | RefDate | date | 3 | NOT NULL | _Date of the file_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | CurrencyType | varchar(16) | 16 | NOT NULL | _Currency (USD/LRD)_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | SENDER_MSISDN | varchar(15) | 15 | NOT NULL | _MSISDN of the sender of the transaction_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | RECEIVER_MSISDN | varchar(15) | 15 | NOT NULL | _MSISDN of the receiver of the transaction_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | RECEIVER_USER_ID | varchar(20) | 20 | NOT NULL | _User ID of the receiver of the transaction_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SENDER_USER_ID | varchar(20) | 20 | NOT NULL | _User ID if the sender of the transaction_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | TRANSACTION_AMOUNT | numeric(17,2) | 9 | NOT NULL | _Transaction amount_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | TRANSACTION_AMOUNT | numeric(17,2) | 9 | NOT NULL | _Transaction amount_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | COMMISSIONS_PAID | numeric(17,2) | 9 | NOT NULL | _Total amount of commissions paid by Orange Money for this transaction (maybe splitted in multiple commissions received by several different users)_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | COMMISSIONS_RECEIVED | numeric(17,2) | 9 | NOT NULL | _Total amount of commissions received by Orange Money (in IND03) for this transaction. It can be the sum of multiple commissions received from several different users. (Ex: reimbursement of paid commissions in case of a transaction rollback)_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | COMMISSIONS_OTHERS | numeric(17,2) | 9 | NOT NULL | _Total amount of commissions where Orange Money IND03 account is not implied (ex: commission paid by PTUPS account to the subscriber)_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SERVICE_CHARGE_RECEIVED | numeric(17,2) | 9 | NOT NULL | _Total amount of service charges  received by Orange Money for this transaction. It can be the sum of multiple commissions received from several different users._ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SERVICE_CHARGE_PAID | numeric(17,2) | 9 | NOT NULL | _Service charges reimbursed by Orange Money to subscriber when rollback or transaction correction_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | TAXES | numeric(17,2) | 9 | NOT NULL | _Total amount of taxes received for this transaction_ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SERVICE_TYPE | varchar(10) | 10 | NOT NULL | _Service type of the transaction:. P2PNONREG, RC, P2P, MERCHPAY, O2C, PAYROLL, BILLPAY, COUTBYCODE, OTF, OPTW, STOCK, CASHIN, CASHOUT, STKTR2OCA, OPTC, etc._ |
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | TRANSFER_STATUS | varchar(3) | 3 | NOT NULL | _Status of the transaction. TF (Transaction Failed), TS (Transaction Successful), TPI (Transaction Initiated for P2P), TI (Transaction Initiated)_ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | SERVICE_TYPE | varchar(10) | 10 | NOT NULL | _Service type of the transaction:. P2PNONREG, RC, P2P, MERCHPAY, O2C, PAYROLL, BILLPAY, COUTBYCODE, OTF, OPTW, STOCK, CASHIN, CASHOUT, STKTR2OCA, OPTC, etc._ |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes)[![Indexes IX_STD_TRXID](../../../../Images/Index.png)](#indexes) | TRANSFER_STATUS | varchar(3) | 3 | NOT NULL | _Status of the transaction. TF (Transaction Failed), TS (Transaction Successful), TPI (Transaction Initiated for P2P), TI (Transaction Initiated)_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SENDER_PRE_BAL | numeric(17,2) | 9 | NOT NULL | _Balance of the sender before the transaction _ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | SENDER_POST_BAL | numeric(17,2) | 9 | NOT NULL | _Balance of the sender after the transaction (taking into account the transaction amount, service charges and commissions)_ |
 | [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | RECEIVER_PRE_BAL | numeric(17,2) | 9 | NOT NULL | _Balance of the receiver before the transaction _ |
@@ -119,9 +118,10 @@ Notes:<br />- When using this data file to calculate total number or amount of t
 
 ## <a name="#indexes"></a>Indexes
 
-| Key | Name | Included Columns | Type | Compression | Page Locks | Row Locks | Partition Scheme | Partitioned |
-|---|---|---|---|---|---|---|---|---|
-| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | cci_TransactionsEx | FileID, ID, RefDate, CurrencyType, SENDER_MSISDN, RECEIVER_MSISDN, RECEIVER_USER_ID, SENDER_USER_ID, TRANSACTION_AMOUNT, COMMISSIONS_PAID, COMMISSIONS_RECEIVED, COMMISSIONS_OTHERS, SERVICE_CHARGE_RECEIVED, SERVICE_CHARGE_PAID, TAXES, SERVICE_TYPE, TRANSFER_STATUS, SENDER_PRE_BAL, SENDER_POST_BAL, RECEIVER_PRE_BAL, RECEIVER_POST_BAL, SENDER_ACC_STATUS, RECEIVER_ACC_STATUS, ERROR_CODE, ERROR_DESC, REFERENCE_NUMBER, CREATED_ON, CREATED_BY, MODIFIED_ON, MODIFIED_BY, APP_1_DATE, APP_2_DATE, TRANSFER_ID, TRANSFER_DATETIME, SENDER_CATEGORY_CODE, SENDER_DOMAIN_CODE, SENDER_GRADE_NAME, SENDER_GROUP_ROLE, SENDER_DESIGNATION, SENDER_STATE, RECEIVER_CATEGORY_CODE, RECEIVER_DOMAIN_CODE, RECEIVER_GRADE_NAME, RECEIVER_GROUP_ROLE, RECEIVER_DESIGNATION, RECEIVER_STATE, SENDER_CITY, RECEIVER_CITY, APP_1_BY, APP_2_BY, REQUEST_SOURCE, GATEWAY_TYPE, TRANSFER_SUBTYPE, PAYMENT_TYPE, PAYMENT_NUMBER, PAYMENT_DATE, REMARKS, ACTION_TYPE, TRANSACTION_TAG, RECONCILIATION_BY, RECONCILIATION_FOR, EXT_TXN_NUMBER, ORIGINAL_REF_NUMBER, ZEBRA_AMBIGUOUS, ATTEMPT_STATUS, OTHER_MSISDN, SENDER_WALLET_NUMBER, RECEIVER_WALLET_NUMBER, SENDER_USER_NAME, RECEIVER_USER_NAME, TNO_MSIDN, TNO_ID, UNREG_FIRST_NAME, UNREG_LAST_NAME, UNREG_DOB, UNREG_ID_NUMBER, BULK_PAYOUT_BATCHID, IS_FINANCIAL, TRANSFER_DONE, INITIATOR_MSISDN, VALIDATOR_MSISDN, INITIATOR_COMMENTS, VALIDATOR_COMMENTS, SENDER_WALLET_NAME, RECEIVER_WALLET_NAME, SENDER_USER_TYPE, RECEIVER_USER_TYPE | Columnstore | COLUMNSTORE ON PARTITIONS (1), COLUMNSTORE ON PARTITIONS (2), COLUMNSTORE ON PARTITIONS (3), COLUMNSTORE ON PARTITIONS (4), COLUMNSTORE ON PARTITIONS (5), COLUMNSTORE ON PARTITIONS (6), COLUMNSTORE ON PARTITIONS (7), COLUMNSTORE ON PARTITIONS (8), COLUMNSTORE ON PARTITIONS (9), COLUMNSTORE ON PARTITIONS (10), COLUMNSTORE ON PARTITIONS (11), COLUMNSTORE ON PARTITIONS (12), COLUMNSTORE ON PARTITIONS (13) | NO | NO | pschSemesterPartition | RefDate |
+| Key | Name | Key Columns | Included Columns | Type | Compression | Page Locks | Row Locks | Partition Scheme | Partitioned |
+|---|---|---|---|---|---|---|---|---|---|
+|  | IX_STD_TRXID | RefDate, CurrencyType, SENDER_MSISDN, SERVICE_TYPE, TRANSFER_STATUS | RECEIVER_MSISDN, TRANSACTION_AMOUNT |  |  |  |  | pschSemesterPartition | RefDate |
+| [![Cluster Key cci_TransactionsEx: *](../../../../Images/cluster.png)](#indexes) | cci_TransactionsEx |  | FileID, ID, RefDate, CurrencyType, SENDER_MSISDN, RECEIVER_MSISDN, RECEIVER_USER_ID, SENDER_USER_ID, TRANSACTION_AMOUNT, COMMISSIONS_PAID, COMMISSIONS_RECEIVED, COMMISSIONS_OTHERS, SERVICE_CHARGE_RECEIVED, SERVICE_CHARGE_PAID, TAXES, SERVICE_TYPE, TRANSFER_STATUS, SENDER_PRE_BAL, SENDER_POST_BAL, RECEIVER_PRE_BAL, RECEIVER_POST_BAL, SENDER_ACC_STATUS, RECEIVER_ACC_STATUS, ERROR_CODE, ERROR_DESC, REFERENCE_NUMBER, CREATED_ON, CREATED_BY, MODIFIED_ON, MODIFIED_BY, APP_1_DATE, APP_2_DATE, TRANSFER_ID, TRANSFER_DATETIME, SENDER_CATEGORY_CODE, SENDER_DOMAIN_CODE, SENDER_GRADE_NAME, SENDER_GROUP_ROLE, SENDER_DESIGNATION, SENDER_STATE, RECEIVER_CATEGORY_CODE, RECEIVER_DOMAIN_CODE, RECEIVER_GRADE_NAME, RECEIVER_GROUP_ROLE, RECEIVER_DESIGNATION, RECEIVER_STATE, SENDER_CITY, RECEIVER_CITY, APP_1_BY, APP_2_BY, REQUEST_SOURCE, GATEWAY_TYPE, TRANSFER_SUBTYPE, PAYMENT_TYPE, PAYMENT_NUMBER, PAYMENT_DATE, REMARKS, ACTION_TYPE, TRANSACTION_TAG, RECONCILIATION_BY, RECONCILIATION_FOR, EXT_TXN_NUMBER, ORIGINAL_REF_NUMBER, ZEBRA_AMBIGUOUS, ATTEMPT_STATUS, OTHER_MSISDN, SENDER_WALLET_NUMBER, RECEIVER_WALLET_NUMBER, SENDER_USER_NAME, RECEIVER_USER_NAME, TNO_MSIDN, TNO_ID, UNREG_FIRST_NAME, UNREG_LAST_NAME, UNREG_DOB, UNREG_ID_NUMBER, BULK_PAYOUT_BATCHID, IS_FINANCIAL, TRANSFER_DONE, INITIATOR_MSISDN, VALIDATOR_MSISDN, INITIATOR_COMMENTS, VALIDATOR_COMMENTS, SENDER_WALLET_NAME, RECEIVER_WALLET_NAME, SENDER_USER_TYPE, RECEIVER_USER_TYPE | Columnstore | COLUMNSTORE ON PARTITIONS (1), COLUMNSTORE ON PARTITIONS (2), COLUMNSTORE ON PARTITIONS (3), COLUMNSTORE ON PARTITIONS (4), COLUMNSTORE ON PARTITIONS (5), COLUMNSTORE ON PARTITIONS (6), COLUMNSTORE ON PARTITIONS (7), COLUMNSTORE ON PARTITIONS (8), COLUMNSTORE ON PARTITIONS (9), COLUMNSTORE ON PARTITIONS (10), COLUMNSTORE ON PARTITIONS (11), COLUMNSTORE ON PARTITIONS (12), COLUMNSTORE ON PARTITIONS (13) | NO | NO | pschSemesterPartition | RefDate |
 
 
 ---
@@ -130,5 +130,5 @@ Notes:<br />- When using this data file to calculate total number or amount of t
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

@@ -29,8 +29,10 @@
 | [dbo.GeographicalDomain](GeographicalDomain.md) | _Provide the list and details of the geographical domains_ |
 | [dbo.GradeDetails](GradeDetails.md) | _Provides the list of user grades and the corresponding category code_ |
 | [dbo.GroupRoles](GroupRoles.md) | _Provide mapping of group role codes and role codes._ |
+| [dbo.OMmonthlyledger](OMmonthlyledger.md) |  |
 | [dbo.RecieverKYC](RecieverKYC.md) |  |
 | [dbo.Reconciliation](Reconciliation.md) | _Provides the balance for the OM bank and for each user type. Check if the accounts are balanced_ |
+| [dbo.ReportLevel](ReportLevel.md) |  |
 | [dbo.Roles](Roles.md) | _Provide list of roles, corresponding domain types and groups including other role properties._ |
 | [dbo.ServiceCharge](ServiceCharge.md) | _Provides the service charge configuration details_ |
 | [dbo.ServicesChargesDetails](ServicesChargesDetails.md) | _Contains list of Service Charges received for the transactions created on the targeted day.<br />This export contains also a lot of lines where service charge amount is zero (non-charged transactions), as these NULL charges are logged in the database._ |
@@ -54,5 +56,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

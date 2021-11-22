@@ -19,7 +19,7 @@
 
 | Key | Name | Data Type | Max Length (Bytes) | Nullability | Identity | Identity Replication |
 |---|---|---|---|---|---|---|
-| [![Primary Key PK_MOEDAS: IDTipoMoeda](../../../../Images/pk.png)](#indexes) | IDTipoMoeda | int | 4 | NOT NULL | 1 - 1 | NO |
+| [![Cluster Primary Key PKMOEDAS: IDTipoMoeda](../../../../Images/pkcluster.png)](#indexes) | IDTipoMoeda | int | 4 | NOT NULL | 1 - 1 | NO |
 | [![Indexes IX_TiposMoedas](../../../../Images/Index.png)](#indexes) | Cod_ID_Moeda | varchar(12) | 12 | NOT NULL |  |  |
 |  | Desig_Completa | varchar(50) | 50 | NOT NULL |  |  |
 |  | Desig_Abrev | varchar(20) | 20 | NOT NULL |  |  |
@@ -38,5 +38,5 @@
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > dbo.ActiveSubsBasePyramidMonthlyMarketShare
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > dbo.ActiveSubsBasePyramidMonthlyMarketShare
 
 # ![Tables](../../../../Images/Table32.png) [dbo].[ActiveSubsBasePyramidMonthlyMarketShare]
 
@@ -14,13 +14,13 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability |
-|---|---|---|---|---|
-| [![Primary Key PK_ActiveSubsBasePyramidMonthlyMarketShare: IDDimDate](../../../../Images/pk.png)](#indexes) | IDDimDate | int | 4 | NOT NULL |
-|  | NSubsCustomerBase | int | 4 | NULL allowed |
-|  | NSubsOffNetMTN | int | 4 | NULL allowed |
-|  | NSubsOnNet | int | 4 | NULL allowed |
-|  | NSubsMTN | int | 4 | NULL allowed |
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Description |
+|---|---|---|---|---|---|
+| [![Primary Key PK_ActiveSubsBasePyramidMonthlyMarketShare: IDDimDate](../../../../Images/pk.png)](#indexes) | IDDimDate | int | 4 | NOT NULL | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+|  | NSubsCustomerBase | int | 4 | NULL allowed |  |
+|  | NSubsOffNetMTN | int | 4 | NULL allowed |  |
+|  | NSubsOnNet | int | 4 | NULL allowed |  |
+|  | NSubsMTN | int | 4 | NULL allowed |  |
 
 
 ---
@@ -41,9 +41,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CellReleaseCausesDaily2
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.CellReleaseCausesDaily2
 
 # ![Tables](../../../../Images/Table32.png) [msc].[CellReleaseCausesDaily2]
 
@@ -14,16 +14,16 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|---|
-| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | Hour | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | CellID | int |  | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | ReleaseCause | smallint |  | 2 | NOT NULL |  |
-|  | CallDuration | int |  | 4 | NULL allowed | ((0)) |
-|  | NCallsDur | int |  | 4 | NULL allowed | ((0)) |
-|  | NCalls0Dur | int |  | 4 | NULL allowed | ((0)) |
-|  | NCalls | int | YES | 4 | NULL allowed |  |
+| Key | Name | Data Type | Computed | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|---|
+| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | IDDimDate | int |  | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | Hour | int |  | 4 | NOT NULL |  |  |
+| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | CellID | int |  | 4 | NOT NULL |  | _Phone IMEI (imported from msc from aproximated time of CDR)_ |
+| [![Cluster Primary Key PK_CellReleaseCausesDaily2: IDDimDate\Hour\CellID\ReleaseCause](../../../../Images/pkcluster.png)](#indexes) | ReleaseCause | smallint |  | 2 | NOT NULL |  |  |
+|  | CallDuration | int |  | 4 | NULL allowed | ((0)) | _Duration in seconds_ |
+|  | NCallsDur | int |  | 4 | NULL allowed | ((0)) | _Number of calls with duration_ |
+|  | NCalls0Dur | int |  | 4 | NULL allowed | ((0)) | _Number of calls with 0 duration_ |
+|  | NCalls | int | YES | 4 | NULL allowed |  | _Number of calls_ |
 
 
 ---
@@ -62,9 +62,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

@@ -14,7 +14,6 @@ Provides the balance for the OM bank and for each user type. Check if the accoun
 
 | Property | Value |
 |---|---|
-| Collation | Latin1_General_CI_AS |
 | Is Partitioned | YES |
 | Partitioned Column | RefDate |
 
@@ -64,5 +63,5 @@ Provides the balance for the OM bank and for each user type. Check if the accoun
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Monday, July 12, 2021 6:27:35 PM
+###### Created: Monday, November 22, 2021 4:40:59 PM
 

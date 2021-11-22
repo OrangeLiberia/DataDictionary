@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.HandSetCustomersDaily1
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > [Tables](Tables.md) > msc.HandSetCustomersDaily1
 
 # ![Tables](../../../../Images/Table32.png) [msc].[HandSetCustomersDaily1]
 
@@ -17,16 +17,16 @@
 
 ## <a name="#columns"></a>Columns
 
-| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default |
-|---|---|---|---|---|---|
+| Key | Name | Data Type | Max Length (Bytes) | Nullability | Default | Description |
+|---|---|---|---|---|---|---|
 | [![Cluster Primary Key PK_HandSetCustomersDaily1: IDDimDate\MSISDN\IMEI](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_HandSetCustomersDaily1_IMEI
-IX_HandSetCustomersDaily1_MSISDN](../../../../Images/Index.png)](#indexes)(2) | IDDimDate | int | 4 | NOT NULL |  |
-| [![Cluster Primary Key PK_HandSetCustomersDaily1: IDDimDate\MSISDN\IMEI](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_HandSetCustomersDaily1_MSISDN](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |  |
-| [![Cluster Primary Key PK_HandSetCustomersDaily1: IDDimDate\MSISDN\IMEI](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_HandSetCustomersDaily1_IMEI](../../../../Images/Index.png)](#indexes) | IMEI | varchar(32) | 32 | NOT NULL |  |
-|  | LastIMEI | bit | 1 | NOT NULL | ((0)) |
-|  | FirstMSISDN | bit | 1 | NOT NULL | ((0)) |
-|  | LastMSISDN | bit | 1 | NOT NULL | ((0)) |
-|  | FirstIMEI | bit | 1 | NOT NULL | ((0)) |
+IX_HandSetCustomersDaily1_MSISDN](../../../../Images/Index.png)](#indexes)(2) | IDDimDate | int | 4 | NOT NULL |  | _Date ID (see [fwk.DimDate](DimDate.md))_ |
+| [![Cluster Primary Key PK_HandSetCustomersDaily1: IDDimDate\MSISDN\IMEI](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_HandSetCustomersDaily1_MSISDN](../../../../Images/Index.png)](#indexes) | MSISDN | varchar(32) | 32 | NOT NULL |  |  |
+| [![Cluster Primary Key PK_HandSetCustomersDaily1: IDDimDate\MSISDN\IMEI](../../../../Images/pkcluster.png)](#indexes)[![Indexes IX_HandSetCustomersDaily1_IMEI](../../../../Images/Index.png)](#indexes) | IMEI | varchar(32) | 32 | NOT NULL |  |  |
+|  | LastIMEI | bit | 1 | NOT NULL | ((0)) | _1 if its the last IMEI used by this MSISDN_ |
+|  | FirstMSISDN | bit | 1 | NOT NULL | ((0)) | _1 if its the first MSISDN used by this IMEI_ |
+|  | LastMSISDN | bit | 1 | NOT NULL | ((0)) | _1 if its the last MSISDN used by this IMEI_ |
+|  | FirstIMEI | bit | 1 | NOT NULL | ((0)) | _1 if its the first IMEI used by this MSISDN_ |
 
 
 ---
@@ -60,9 +60,9 @@ IX_HandSetCustomersDaily1_MSISDN](../../../../Images/Index.png)](#indexes)(2) | 
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

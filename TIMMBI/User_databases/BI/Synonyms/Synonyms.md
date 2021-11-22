@@ -1,6 +1,6 @@
 #### 
 
-[Project](../../../../index.md) > [TIMMBI\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > Synonyms
+[Project](../../../../index.md) > [192.168.19.120\\BI](../../../index.md) > [User databases](../../index.md) > [BI](../index.md) > Synonyms
 
 # ![Synonyms](../../../../Images/Synonym32.png) Synonyms
 
@@ -22,6 +22,7 @@
 | [in.syntb_TDR_aux](syntb_TDR_aux.md) |
 | [msc.syntb_FileDescriptorDATA](syntb_FileDescriptorDATA.md) |
 | [msc.syntb_FileDescriptorNRT](syntb_FileDescriptorNRT.md) |
+| [msc.syntb_FileDescriptorSMSCZTE](syntb_FileDescriptorSMSCZTE.md) |
 | [msc.syntb_FileDescriptorZTE](syntb_FileDescriptorZTE.md) |
 | [msc.syntb_GGSN](syntb_GGSN.md) |
 | [msc.syntb_LOC](syntb_LOC.md) |
@@ -33,6 +34,7 @@
 | [msc.syntb_SGSN](syntb_SGSN.md) |
 | [msc.syntb_SMOC](syntb_SMOC.md) |
 | [msc.syntb_SMOCZTE](syntb_SMOCZTE.md) |
+| [msc.syntb_SMSCSMSZTE](syntb_SMSCSMSZTE.md) |
 | [msc.syntb_SMTC](syntb_SMTC.md) |
 | [msc.syntb_SMTCZTE](syntb_SMTCZTE.md) |
 | [msc.syntb_USSD](syntb_USSD.md) |
@@ -41,9 +43,9 @@
 
 ---
 
-###### Author:  MIS
+###### Author:  MIS Team
 
 ###### Copyright 2021 - All Rights Reserved
 
-###### Created: Sunday, July 4, 2021 9:38:37 PM
+###### Created: Monday, November 22, 2021 3:15:24 PM
 

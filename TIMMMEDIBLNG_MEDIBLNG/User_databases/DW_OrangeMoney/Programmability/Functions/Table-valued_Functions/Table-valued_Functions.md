@@ -22,7 +22,18 @@
 | [dbo.tvf_SubscriberInjections](tvf_SubscriberInjections.md) |
 | [dbo.tvf_SubscriberTransactions](tvf_SubscriberTransactions.md) |
 | [dbo.tvf_SubscriberTransactionsAll](tvf_SubscriberTransactionsAll.md) |
-
+| [dbo.tvf_KPI_Distributor_Commissions](tvf_KPI_Distributor_Commissions.md) |
+| [dbo.tvf_KPI_Distributor_Commissions_PerDay](tvf_KPI_Distributor_Commissions_PerDay.md) |
+| [dbo.tvf_KPI_Num_Merchants](tvf_KPI_Num_Merchants.md) |
+| [dbo.tvf_KPI_Num_Merchants_PerDay](tvf_KPI_Num_Merchants_PerDay.md) |
+| [dbo.tvf_KPI_Operations](tvf_KPI_Operations.md) |
+| [dbo.tvf_KPI_Operations_Active](tvf_KPI_Operations_Active.md) |
+| [dbo.tvf_KPI_Operations_Active_PerDay](tvf_KPI_Operations_Active_PerDay.md) |
+| [dbo.tvf_KPI_Operations_Hourly](tvf_KPI_Operations_Hourly.md) |
+| [dbo.tvf_KPI_Operations_PerDay](tvf_KPI_Operations_PerDay.md) |
+| [dbo.tvf_KPI_Subscribers_Active](tvf_KPI_Subscribers_Active.md) |
+| [dbo.tvf_KPI_Subscribers_Active_PerDay](tvf_KPI_Subscribers_Active_PerDay.md) |
+| [dbo.tvf_KPI_Subscribers_New_PerDay](tvf_KPI_Subscribers_New_PerDay.md) |
 
 ---
 

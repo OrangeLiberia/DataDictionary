@@ -1,0 +1,24 @@
+#### 
+
+[Project](../../../../../index.md) > [192.168.19.11\\MEDIBLNG](../../../../index.md) > [User databases](../../../index.md) > [DW_OrangeMoney](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.rpt_KiosksStatistic
+
+# ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[rpt_KiosksStatistic]
+
+---
+
+## <a name="#parameters"></a>Parameters
+
+| Name | Data Type | Max Length (Bytes) |
+|---|---|---|
+| @RefDate | date | 3 |
+| @CashFlow | varchar(32) | 32 |
+
+
+---
+
+###### Author:  MIS Team
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Monday, November 22, 2021 4:40:59 PM
+

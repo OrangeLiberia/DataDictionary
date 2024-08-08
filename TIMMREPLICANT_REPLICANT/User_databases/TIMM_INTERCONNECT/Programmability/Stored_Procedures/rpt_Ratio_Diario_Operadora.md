@@ -1,0 +1,34 @@
+#### 
+
+[Project](../../../../../index.md) > [192.168.19.11\\MEDIBLNG](../../../../index.md) > [User databases](../../../index.md) > [TIMM_INTERCONNECT](../../index.md) > [Programmability](../index.md) > [Stored Procedures](Stored_Procedures.md) > dbo.rpt_Ratio_Diario_Operadora
+
+# ![Stored Procedures](../../../../../Images/StoredProcedure32.png) [dbo].[rpt_Ratio_Diario_Operadora]
+
+---
+
+## <a name="#properties"></a>Properties
+
+| Property | Value |
+|---|---|
+| ANSI Nulls On | YES |
+
+
+---
+
+## <a name="#parameters"></a>Parameters
+
+| Name | Data Type | Max Length (Bytes) |
+|---|---|---|
+| @dataini | datetime | 8 |
+| @datafim | datetime | 8 |
+| @OperadoraID | int | 4 |
+
+
+---
+
+###### Author:  MIS Team
+
+###### Copyright 2021 - All Rights Reserved
+
+###### Created: Monday, November 22, 2021 4:40:59 PM
+

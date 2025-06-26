@@ -1,59 +1,25 @@
-# FAQ: Sites Data & Revenue Reporting
+keywords: Sites Data, daily traffic, voice, data, revenue, GSM, OM, users, ERA Sites, SQL script, DMP_SwitchCellIDs  
 
-## Keywords  
-- BI server  
-- TIMM_INV.TIMM_DMP  
-- DMP_SwitchCellIDs  
-- Global_SiteID  
-- County  
-- CellID  
-- #Sites, #Sites2  
-- SubsCallsPerCellDeviceMonthly  
-- SubsTransactionsPerCellMonthly  
-- fwk.DimDate  
-- TransactionKeys  
-- WalletID  
-- Minutes, Amount, NSubs  
-- SSIS / SQL Agent Job  
-- Parameterization  
+# FAQ: Retrieve Daily Traffic, Revenue & Users by Site  
 
----
+**Request:**  
+“Please is there a table or way that I can get the daily traffic (Voice & Data), revenue (GSM (voice, data) & OM) and users (GSM, OM) by Sites. We need it to know the performance of the ERA Sites.”  
+— Henry N Bainda, 18 June 2025  
 
-## Overview  
-**Q: What’s the purpose of this report?**  
-A: To deliver daily traffic (voice & data), revenue (GSM voice, GSM data, OM), and subscriber counts by site—helping you monitor ERA-site performance at a glance.
+**Answer:**  
+Use the MIS BI database on SQL Server to pull per-site metrics in three steps:  
 
----
-
-## Data Sources & Environment  
-
-**Q: Which server and database houses the raw site data?**  
-A:  
-- **Server:** Your BI server  
-- **Database:** `TIMM.INV.TIMM_DMP`  
-
-**Q: What tables feed into this report?**  
-A:  
-1. **`DMP_SwitchCellIDs`** – maps each CellID to a `Global_SiteID` and `County`.  
-2. **`SubsCallsPerCellDeviceMonthly`** – call records (minutes, amounts) per MSISDN and CellID.  
-3. **`SubsTransactionsPerCellMonthly`** – data & transaction records per MSISDN and CellID.  
-4. **`fwk.DimDate`** – date dimension to filter by reporting period.  
-5. **`[in].TransactionKeys`** – filters only billable transactions.
-
----
-
-## Generating the Site Lists  
-
-**Q: How do I build the list of all “Sites” per `Global_SiteID`?**  
-A: Two temp tables are used:
+1. Build a temp table of all CellID→Site mappings.  
+2. Collapse CellIDs into a comma-delimited list per `Global_SiteID`.  
+3. Join calls + transactions, aggregate minutes, amounts and distinct subscribers.  
 
 ```sql
--- 1) Raw mapping of CellID → Global_SiteID & County  
+-- 1) Load raw cell-to-site mapping
 SELECT *
 INTO #Sites
 FROM [TIMM.INV].[TIMM_DMP].[dbo].[DMP_SwitchCellIDs];
 
--- 2) Concatenate CellIDs per Global_SiteID for easy lookup  
+-- 2) Aggregate CellIDs per Global_SiteID
 SELECT
   CAT.Global_SiteID,
   CAT.County,
@@ -65,5 +31,64 @@ SELECT
   ).value('.', 'NVARCHAR(MAX)'), 1, 1, '') AS Sites
 INTO #Sites2
 FROM [TIMM.INV].[TIMM_DMP].[dbo].[DMP_SwitchCellIDs] CAT
-GROUP BY CAT.Global_SiteID, CAT.County
-ORDER BY CAT.Global_SiteID;
+GROUP BY CAT.Global_SiteID, CAT.County;
+
+-- 3) Combine traffic, revenue & user counts by site/month
+SELECT
+  RSM.[Month],
+  SL.County,
+  SL.Global_SiteID,
+  SL.Sites,
+  RSM.[Minutes],
+  RSM.Amount,
+  RSM.NSubs
+FROM (
+  -- Aggregate per site-month
+  SELECT
+    RCM.[Month],
+    CL.County,
+    CL.Global_SiteID,
+    SUM(RCM.[Minutes])         AS [Minutes],
+    SUM(RCM.Amount)            AS Amount,
+    COUNT(DISTINCT RCM.MSISDN) AS NSubs
+  FROM (
+    -- Outgoing voice calls (minutes)
+    SELECT
+      DD.DtYMD      AS [Month],
+      CMI.MSISDN,
+      CMI.CellID,
+      (CMI.MOFreeDurSec + CMI.MOChargedDurSec)/60.0 AS [Minutes],
+      CASE WHEN CMI.WalletID IN (2,3) THEN CMI.Amount ELSE 0 END AS Amount
+    FROM [in].[SubsCallsPerCellDeviceMonthly] CMI
+    INNER JOIN fwk.DimDate DD
+      ON DD.ID = CMI.IDDimDate
+      AND DD.IDPeriodYM = 202404
+    WHERE CMI.CellID >= 1000
+
+    UNION ALL
+
+    -- Data & other transactions (negative amounts)
+    SELECT
+      DD.DtYMD      AS [Month],
+      TMI.MSISDN,
+      TMI.CellID,
+      0             AS [Minutes],
+      -1 * TMI.Amount AS Amount
+    FROM [in].[SubsTransactionsPerCellMonthly] TMI
+    INNER JOIN fwk.DimDate DD
+      ON DD.ID = TMI.IDDimDate
+      AND DD.IDPeriodYM = 202404
+    INNER JOIN [in].TransactionKeys TR
+      ON TR.ID = TMI.TransactionKey
+      AND (TR.Fee = 1 OR TR.FeeOM = 1)
+      AND TR.Type IS NOT NULL
+      AND TR.IDOrigDest IS NOT NULL
+    WHERE TMI.CellID >= 1000
+      AND TMI.WalletID IN (2,3,90,91)
+  ) RCM
+  INNER JOIN #Sites CL
+    ON CL.ID = RCM.CellID
+  GROUP BY RCM.[Month], CL.County, CL.Global_SiteID
+) RSM
+INNER JOIN #Sites2 SL
+  ON SL.Global_SiteID = RSM.Global_SiteID;

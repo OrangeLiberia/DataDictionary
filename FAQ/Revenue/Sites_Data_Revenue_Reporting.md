@@ -1,4 +1,4 @@
-keywords: Sites Data, daily traffic, voice, data, revenue, GSM, OM, users, ERA Sites, SQL Server, temp tables, aggregation
+keywords: #Sites Data, #daily traffic, #site revenue, #ERA Sites
 
 # FAQ: Retrieve Daily Traffic, Revenue & User Counts by Site
 
@@ -19,6 +19,7 @@ Field teams and management need a daily breakdown of voice minutes, data-related
   - `fwk.DimDate`
   - `in.TransactionKeys`  
 - Ability to create temp tables in tempdb.
+- Execution of sample query on TIMM_BI/BI server
 
 ## Solution Overview  
 1. **Map each CellID to a Global_SiteID** using `DMP_SwitchCellIDs`.  

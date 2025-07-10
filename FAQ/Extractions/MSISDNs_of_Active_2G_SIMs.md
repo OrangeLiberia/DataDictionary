@@ -64,7 +64,7 @@ SELECT
 FROM #2GSIM AS G
 INNER JOIN BI.msc.CustomerLastVisitedSite AS C
     ON G.MSISDN = RIGHT(C.MSISDN, 8)  -- match suffix
-INNER JOIN TIMM.MEDI.dbo.DMP_SwitchCellIDs AS S
+INNER JOIN [TIMM.MEDI].[TIMM_DMP].dbo.DMP_SwitchCellIDs AS S
     ON C.CellID = S.ID
 WHERE S.County IN ('Montserrado', 'Nimba', 'Grand Bassa')
 ORDER BY G.MSISDN;

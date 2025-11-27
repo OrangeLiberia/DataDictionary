@@ -155,7 +155,7 @@ ORDER BY Tech_Count DESC
 
 ##  Conclusion
     
-##   This Solution(Report) implements the standardized customer base and traffic analysis methodology for 2G, 3G, and 4G networks within the DMP_GPRS system to maintain consistent, 
-##   reliable subscriber technology metrics. It ensures the monthly calculation of unique customers per technology, customer overlap across multiple networks, and technology
-##   adoption patterns are aligned with well-defined telecommunications standards, enabling robust network planning, infrastructure investment decisions, and technology migration strategies
-
+   This Solution(Report) implements the standardized customer base and traffic analysis methodology for 2G, 3G, and 4G networks within the DMP_GPRS system to maintain consistent, 
+   reliable subscriber technology metrics. It ensures the monthly calculation of unique customers per technology, customer overlap across multiple networks, and technology
+   adoption patterns are aligned with well-defined telecommunications standards, enabling robust network planning, infrastructure investment decisions, and technology migration strategies
+   ---

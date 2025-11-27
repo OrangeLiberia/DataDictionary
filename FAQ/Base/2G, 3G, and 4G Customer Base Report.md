@@ -1,22 +1,198 @@
-# 2G, 3G, and 4G Customer Base Report - FAQ
+# 2G, 3G, and 4G Customer Base Data
 
 ## Project Overview
 
 ### What is this project?
 This project generates a comprehensive report on mobile network customer base and traffic information across different technologies (2G, 3G, and 4G) for a specified time period.
 
-### What data does the report provide?
-- **Customer Base Count**: Number of unique customers using each technology (2G, 3G, 4G)
-- **Monthly Breakdown**: Customer counts per month and technology
-- **Technology Summary**: Total customers across all months per technology
-- **Overlap Analysis**: Customers who used multiple technologies during the reporting period
+### What does the data provide?
+```sql
+-- =====================================================
+-- 2G, 3G, and 4G Customer Base Data
+-- Period: January to October 2025
+-- =====================================================
+
+-- Create temporary table
+CREATE TABLE #tmp
+( 
+    Refdate VARCHAR(10), 
+    MSISDN VARCHAR(32), 
+    Traffic VARCHAR(32) 
+)
+
+-- =====================================================
+-- INSERT DATA FOR EACH MONTH (Jan - Oct 2025)
+-- =====================================================
+
+-- January 2025
+INSERT INTO #tmp
+SELECT '202501' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202501].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- February 2025
+INSERT INTO #tmp
+SELECT '202502' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202502].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- March 2025
+INSERT INTO #tmp
+SELECT '202503' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202503].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- April 2025
+INSERT INTO #tmp
+SELECT '202504' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202504].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- May 2025
+INSERT INTO #tmp
+SELECT '202505' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202505].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- June 2025
+INSERT INTO #tmp
+SELECT '202506' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202506].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- July 2025
+INSERT INTO #tmp
+SELECT '202507' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202507].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- August 2025
+INSERT INTO #tmp
+SELECT '202508' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202508].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- September 2025
+INSERT INTO #tmp
+SELECT '202509' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202509].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- October 2025
+INSERT INTO #tmp
+SELECT '202510' AS refdate, [servedMSISDN] AS [MSISDN],
+    CASE rATType 
+        WHEN 1 THEN '3G' 
+        WHEN 2 THEN '2G' 
+        WHEN 6 THEN '4G' 
+        ELSE 'UNK' 
+    END AS Traffic
+FROM [DMP_GPRS_Repository_202510].[dbo].[GGSNPDPRecord]
+WHERE rATType IN (1, 2, 6)
+GROUP BY rATType, [servedMSISDN]
+
+-- =====================================================
+-- FINAL RESULTS
+-- =====================================================
+
+-- Result 1: Customer Count by Month and Technology
+SELECT 
+    Refdate AS [Month],
+    Traffic AS [Technology],
+    COUNT(DISTINCT MSISDN) AS [Unique Customers]
+FROM #tmp
+GROUP BY Refdate, Traffic
+ORDER BY Refdate, Traffic
+
+-- Result 2: Summary by Technology (Total across all months)
+SELECT 
+    Traffic AS [Technology],
+    COUNT(DISTINCT MSISDN) AS [Total Unique Customers]
+FROM #tmp
+GROUP BY Traffic
+ORDER BY Traffic
+
+-- Result 3: Monthly Totals (All Technologies Combined)
+SELECT 
+    Refdate AS [Month],
+    COUNT(DISTINCT MSISDN) AS [Total Customers (All Tech)]
+FROM #tmp
+GROUP BY Refdate
+ORDER BY Refdate
+
+-- Clean up
+DROP TABLE #tmp
+```
 
 ---
 
 ## Understanding the Data
 
 ### What is "Customer Base with Overlap per Traffic"?
-The report counts customers **per technology type**. This means:
+The Data counts customers **per technology type**. This means:
 - If a customer uses **only 3G** in a month, they appear **once** (in the 3G count)
 - If a customer uses **both 3G and 4G** in a month, they appear **twice** (once in 3G, once in 4G)
 - If a customer uses **all three technologies** (2G, 3G, 4G), they appear **three times**
@@ -56,9 +232,6 @@ Modern devices and network conditions can cause users to switch between technolo
     - `2` = 2G
     - `6` = 4G/LTE
 
-### What time period does the report cover?
-By default: **January 2025 to October 2025** (configurable)
-
 ### How are customers counted?
 ```sql
 COUNT(DISTINCT servedMSISDN)
@@ -68,7 +241,7 @@ COUNT(DISTINCT servedMSISDN)
 
 ---
 
-## Using the Report
+## Using the Data
 
 ### What are the three result sets?
 
@@ -124,16 +297,9 @@ ORDER BY Tech_Count DESC
 ```
 ### Q: Why don't you have traffic volume data?
 **A:** The `GGSNPDPRecord` table contains customer base information only. Traffic volume data (MB/GB) would need to be sourced from a different table (e.g., `DataUsage`, `TrafficData`, or CDR tables).
-
-### Q: How long does the script take to run?
-**A:** Depends on data volume, typically:
-- Small dataset (< 1M records): 30 seconds - 2 minutes
-- Medium dataset (1-10M records): 2-10 minutes
-- Large dataset (> 10M records): 10-30 minutes
-
 ---
 
-## Report Interpretation
+## Data Interpretation Conclusion
 
 ### Key Insights to Extract
 
@@ -152,10 +318,5 @@ ORDER BY Tech_Count DESC
 4. **Customer Segmentation**
    - Single-tech users vs. multi-tech users
    - Technology preference by time period
-
-##  Conclusion
-    
-   This Solution(Report) implements the standardized customer base and traffic analysis methodology for 2G, 3G, and 4G networks within the DMP_GPRS system to maintain consistent, 
-   reliable subscriber technology metrics. It ensures the monthly calculation of unique customers per technology, customer overlap across multiple networks, and technology
-   adoption patterns are aligned with well-defined telecommunications standards, enabling robust network planning, infrastructure investment decisions, and technology migration strategies
    ---
+

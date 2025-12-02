@@ -7,7 +7,7 @@ This document explains the SQL script `young_customers_analysis.sql` used to bui
 
 ## Summary of the Report
 
-* Build a temporary base of subscribers whose age is **≤ 34** between *2025-01-01* and *2025-11-28*.
+* Build a temporary base of subscribers whose age is **≤ 34**.
 * Produce analyses: counts, device breakdown, location distribution, monthly ARPU/AUPU/AAPU, favorite bundles, consumption patterns, active vs inactive segmentation, and a monthly summary dashboard.
 * Apply defensive parsing and conversions to avoid runtime errors when numeric columns are stored as text (e.g., `ARPU`, `BundleCost`, `MB`, `DURATION`).
 
@@ -126,4 +126,5 @@ FROM [TIMM_Report].[dbo].[tbc_V9CampaignsBundleDR]
 WHERE BundleCost IS NOT NULL
   AND TRY_CONVERT(DECIMAL(18,2), REPLACE(REPLACE(LTRIM(RTRIM(BundleCost)), ',', ''), CHAR(160), '')) IS NULL;
 ```
+
 

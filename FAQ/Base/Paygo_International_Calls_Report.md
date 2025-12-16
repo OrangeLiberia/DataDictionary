@@ -202,9 +202,10 @@ ORDER BY [Destination Country], BILLING_NBR;
 - Results are ordered by destination country and billing number
 
 ## Author
-BI Team
+Bronax N. Barlue
 
 ## Version History
 | Version | Date | Changes |
 |---------|------|---------|
 | 1.0 | 2025-12-16 | finanl implementation |
+

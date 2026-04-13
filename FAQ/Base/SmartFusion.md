@@ -1,23 +1,23 @@
 # 📊 Smart Fusion Inactive Base Report – FAQ
 
-## 📌 Overview
+## Overview
 This document provides answers to frequently asked questions about the **Smart Fusion Inactive Base Report**, including how the data is generated, filtered, and interpreted.
 
 ---
 
-## ❓ What is the Smart Fusion Inactive Base Report?
+## What is the Smart Fusion Inactive Base Report?
 The Smart Fusion Inactive Base Report identifies customers who previously purchased Smart Fusion bundles but are currently considered inactive based on bundle expiration.
 
 ---
 
-## ❓ What defines an “inactive” customer in this report?
+## What defines an “inactive” customer in this report?
 A customer is classified as inactive if:
 - Their **bundle expiration date is older than 2 months** from today.
 - They have made at least one bundle purchase within the **last 6 months**.
 
 ---
 
-## ❓ What data fields are included in the report?
+## What data fields are included in the report?
 
 | Field Name        | Description |
 |------------------|-------------|
@@ -30,7 +30,7 @@ A customer is classified as inactive if:
 
 ---
 
-## ❓ What data sources are used?
+## What data sources are used?
 The report pulls data from the following tables:
 
 - `tbc_V9CampaignsBundleDR` (Transaction data)
@@ -40,7 +40,7 @@ These tables are joined using the `BundleID` field.
 
 ---
 
-## ❓ How are bundles selected for this report?
+## How are bundles selected for this report?
 Only specific Smart Fusion bundles are included using predefined **Bundle IDs**:
 
 
@@ -54,34 +54,34 @@ Only specific Smart Fusion bundles are included using predefined **Bundle IDs**:
 
 ---
 
-## ❓ What filters are applied in this report?
+## What filters are applied in this report?
 
-### 🔹 Expiration Filter
+### Expiration Filter
 Only bundles that expired **at least 2 months ago** are included:
 
 ```sql
 T.Expiration_Date <= DATEADD(MONTH, -2, GETDATE())
-🔹 Purchase Filter
+ Purchase Filter
 
 Only bundles purchased within the last 6 months are included:
 
 T.Event_Date >= DATEADD(MONTH, -6, GETDATE())
-❓ Why is DISTINCT used in the query?
+ Why is DISTINCT used in the query?
 
 DISTINCT ensures that duplicate records are removed, so each row in the report is unique.
 
-❓ Why is an INNER JOIN used?
+ Why is an INNER JOIN used?
 
 An INNER JOIN ensures:
 
 Only records with matching BundleID in both tables are included
 Each transaction is properly linked to its bundle name
-❓ How is the data sorted?
+ How is the data sorted?
 ORDER BY T.Expiration_Date DESC
 
 This ensures the most recently expired bundles appear first.
 
-❓ What is the business use of this report?
+ What is the business use of this report?
 📣 Targeted reactivation campaigns
 📉 Identifying churned Smart Fusion users
 📊 Customer behavior analysis
@@ -116,7 +116,7 @@ WHERE T.BundleID IN (
 AND T.Expiration_Date <= DATEADD(MONTH, -2, GETDATE())
 AND T.Event_Date >= DATEADD(MONTH, -6, GETDATE())
 ORDER BY T.Expiration_Date DESC;
-✅ Summary
+Summary
 
 The Smart Fusion Inactive Base Report helps identify users who:
 
